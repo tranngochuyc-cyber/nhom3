@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân - Web Developer & IT Student</title>
+</head>
+<body>
+
+    <!-- ==========================================================================
+         [KHỐI SEMANTIC: HEADER]
+         - Vai trò: Đại diện cho phần giới thiệu mở đầu trang hoặc điều hướng chung.
+         - Thường chứa: Logo, thương hiệu nhận diện, thanh tìm kiếm hoặc thanh điều hướng chính (<nav>).
+         ========================================================================== -->
+    <header>
+        <!-- [KHỐI SEMANTIC: NAV]
+             - Vai trò: Xác định một tập hợp các liên kết điều hướng chính của website.
+             - Hỗ trợ công cụ đọc màn hình (Accessibility) và SEO nhận biết luồng trang. -->
+        <nav aria-label="Điều hướng chính">
+            <a href="#about">DevPortfolio</a>
+            <ul>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ==========================================================================
+         [KHỐI SEMANTIC: MAIN]
+         - Vai trò: Chứa nội dung chính, độc nhất và cốt lõi nhất của tài liệu HTML.
+         - Quy tắc chuẩn W3C: Trong một tài liệu chỉ nên có DUY NHẤT một thẻ <main> không ẩn.
+         - Không chứa các phần lặp lại trên nhiều trang như header, footer hay sidebar cố định.
+         ========================================================================== -->
+    <main>
+
+        <!-- [SECTION 1: HERO & GIỚI THIỆU BẢN THÂN]
+             - Vai trò của <section>: Định nghĩa một phân vùng tài liệu theo chủ đề/mục đích cụ thể.
+             - Ở đây đại diện cho phần thông tin mở đầu giới thiệu về bản thân, định hướng nghề nghiệp. -->
+        <section id="about">
+            <h1>Xin chào, tôi là một Lập trình viên & Kỹ sư Phần mềm</h1>
+            <p>
+                Đam mê xây dựng các sản phẩm công nghệ tối ưu, giải quyết bài toán thực tế bằng tư duy thuật toán vững vàng và code sạch (Clean Code).
+            </p>
+        </section>
+
+        <!-- [SECTION 2: KỸ NĂNG CHUYÊN MÔN]
+             - Vai trò của <section>: Phân đoạn hiển thị các năng lực kỹ thuật, ngôn ngữ lập trình và công cụ sử dụng. -->
+        <section id="skills">
+            <h2>Kỹ năng chuyên môn</h2>
+            <p>Các công nghệ và công cụ tôi sử dụng thường xuyên trong công việc:</p>
+            
+            <article>
+                <h3>Lập trình cốt lõi & Backend</h3>
+                <p>Nắm vững tư duy cấu trúc dữ liệu và giải thuật, lập trình hướng đối tượng (OOP).</p>
+                <ul>
+                    <li>Python</li>
+                    <li>FastAPI / Flask</li>
+                    <li>SQL / PostgreSQL</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Frontend & Giao diện</h3>
+                <p>Xây dựng giao diện responsive, tối ưu trải nghiệm người dùng và chuẩn SEO ngữ nghĩa.</p>
+                <ul>
+                    <li>HTML5 Semantic</li>
+                    <li>CSS3 / Tailwind</li>
+                    <li>JavaScript</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Công cụ & Quy trình</h3>
+                <p>Quản lý mã nguồn, làm việc nhóm và triển khai dự án tự động.</p>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>Docker</li>
+                    <li>Linux CLI</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- [SECTION 3: DỰ ÁN NỔI BẬT]
+             - Vai trò của <section>: Gom nhóm các sản phẩm/dự án tiêu biểu đã triển khai.
+             - Kết hợp thẻ <article>: Đại diện cho các thực thể nội dung độc lập, hoàn chỉnh, có thể tái sử dụng. -->
+        <section id="projects">
+            <h2>Dự án tiêu biểu</h2>
+
+            <article>
+                <h3>Hệ thống Quản lý Cơ sở Dữ liệu Học tập</h3>
+                <p>Ứng dụng quản lý sinh viên và tra cứu điểm số sử dụng SQL và Python, tối ưu truy vấn dữ liệu lớn.</p>
+                <p><strong>Công nghệ:</strong> Python, PostgreSQL</p>
+            </article>
+
+            <article>
+                <h3>Trang Tin tức Xanh & Môi trường</h3>
+                <p>Website chia sẻ thông tin cộng đồng với cấu trúc HTML5 Semantic chuẩn SEO và giao diện thân thiện.</p>
+                <p><strong>Công nghệ:</strong> HTML5, CSS Grid/Flexbox</p>
+            </article>
+        </section>
+
+        <!-- [SECTION 4: LIÊN HỆ & KẾT NỐI]
+             - Vai trò của <section>: Phân đoạn cung cấp các kênh thông tin để nhà tuyển dụng hoặc đối tác liên lạc. -->
+        <section id="contact">
+            <h2>Liên hệ hợp tác</h2>
+            <p>Tôi luôn sẵn sàng đón nhận những cơ hội mới, dự án hợp tác hoặc trao đổi chuyên môn.</p>
+            <ul>
+                <li>Email: <a href="mailto:contact@example.com">contact@example.com</a></li>
+                <li>GitHub: <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/profile</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- ==========================================================================
+         [KHỐI SEMANTIC: FOOTER]
+         - Vai trò: Đại diện cho phần chân trang của tài liệu hoặc của một phân vùng (section).
+         - Thường chứa: Bản quyền (copyright), liên kết mạng xã hội, chính sách bảo mật, thông tin tác giả.
+         ========================================================================== -->
+    <footer>
+        <p>&copy; 2026 Portfolio Cá Nhân. Tất cả quyền được bảo lưu.</p>
+        <p>Được xây dựng với chuẩn HTML5 Semantic tối ưu SEO & Trợ năng (Accessibility).</p>
+    </footer>
+
+</body>
+</html>
