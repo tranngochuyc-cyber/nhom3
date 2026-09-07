@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio cá nhân chuẩn Semantic HTML5 dành cho lập trình viên và sinh viên Công nghệ thông tin">
+    <title>Nguyễn Văn Dev | IT Software Engineer Portfolio</title>
+</head>
+<body>
+
+    <!-- ==========================================================================
+         THẺ SEMANTIC: <header>
+         Ý NGHĨA & VAI TRÒ CHUẨN HTML5:
+         - Đại diện cho phần mở đầu / khu vực giới thiệu của một trang web hoặc một phân đoạn.
+         - Thường chứa logo, tên tác giả, slogan hoặc định danh thương hiệu và thanh điều hướng chính.
+         - Giúp công cụ tìm kiếm (Search Engines) và trình đọc màn hình (Screen Readers) xác định
+           ngay phần đầu trang mà không cần phân tích các thẻ div vô nghĩa.
+         ========================================================================== -->
+    <header>
+        <div>
+            <!-- Khu vực nhận diện thương hiệu cá nhân -->
+            <h1>Nguyễn Văn Dev</h1>
+            <p>Sinh viên CNTT &bull; Lập trình viên Web / Software Engineer</p>
+        </div>
+
+        <!-- ==========================================================================
+             THẺ SEMANTIC: <nav>
+             Ý NGHĨA & VAI TRÒ CHUẨN HTML5:
+             - Đại diện cho khu vực điều hướng chính (Navigation), chứa danh sách các siêu liên kết.
+             - Các liên kết này có thể dẫn đến các trang khác hoặc các điểm neo (anchor links) trong chính trang hiện tại.
+             - Screen Readers có thể đọc lướt qua hoặc nhận diện để cho phép người dùng khiếm thị nhảy nhanh đến nội dung.
+             ========================================================================== -->
+        <nav aria-label="Điều hướng chính của website">
+            <ul>
+                <li><a href="#about">Về tôi</a></li>
+                <li><a href="#skills-projects">Kỹ năng &amp; Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- ==========================================================================
+         THẺ SEMANTIC: <main>
+         Ý NGHĨA & VAI TRÒ CHUẨN HTML5:
+         - Đại diện cho nội dung cốt lõi, độc nhất và quan trọng nhất của toàn bộ tài liệu HTML.
+         - Mỗi trang web chỉ được phép có DUY NHẤT một phần tử <main> hiển thị trực tiếp.
+         - Nội dung bên trong <main> không được lặp lại trên các trang khác (loại trừ header, footer, sidebar chung).
+         ========================================================================== -->
+    <main>
+
+        <!-- ==========================================================================
+             MỤC 1: ABOUT ME
+             THẺ SEMANTIC: <section>
+             Ý NGHĨA & VAI TRÒ CHUẨN HTML5:
+             - Đại diện cho một phân đoạn mang tính chủ đề độc lập trong trang web.
+             - Theo chuẩn W3C, một <section> chuẩn mực nên có tiêu đề (heading từ h2-h6) để xác định ngữ cảnh nội dung.
+             ========================================================================== -->
+        <section id="about" aria-labelledby="about-heading">
+            <header>
+                <h2 id="about-heading">Giới Thiệu Bản Thân (About Me)</h2>
+            </header>
+
+            <p>
+                Xin chào! Tôi là <strong>Nguyễn Văn Dev</strong>, hiện là sinh viên năm cuối chuyên ngành 
+                <strong>Công nghệ Thông tin (Kỹ thuật Phần mềm)</strong>. Với niềm đam mê mãnh liệt dành cho công nghệ, 
+                tôi luôn yêu thích việc biến các ý tưởng thiết kế và yêu cầu nghiệp vụ phức tạp thành những ứng dụng web 
+                mượt mà, tối ưu và chuẩn mực.
+            </p>
+            <p>
+                Tôi đặc biệt chú trọng đến việc xây dựng giao diện thân thiện với người dùng (UX/UI), cấu trúc mã nguồn sạch 
+                (Clean Code), khả năng tiếp cận (Accessibility - a11y) và tối ưu hóa công cụ tìm kiếm (SEO) ngay từ những dòng mã HTML5 đầu tiên.
+            </p>
+            <blockquote>
+                <strong>Mục tiêu nghề nghiệp:</strong> Trở thành một <em>Full-stack Developer</em> chuyên nghiệp, có khả năng 
+                thiết kế và triển khai các hệ thống quy mô lớn, đóng góp giá trị thực tiễn cho doanh nghiệp và cộng đồng công nghệ.
+            </blockquote>
+        </section>
+
+        <hr>
+
+        <!-- ==========================================================================
+             MỤC 2: SKILLS & PROJECTS
+             THẺ SEMANTIC: <section> kết hợp <article>
+             Ý NGHĨA & VAI TRÒ CHUẨN HTML5:
+             - <section>: Gom nhóm toàn bộ nội dung liên quan đến năng lực kỹ thuật và sản phẩm thực chiến.
+             - <article>: Đại diện cho một mục tin, bài báo hoặc đơn vị nội dung tự hoàn chỉnh, có thể phân phối 
+               hoặc tái sử dụng độc lập (syndicated content). Tại đây, mỗi dự án được bao bọc bởi một <article> riêng biệt.
+             ========================================================================== -->
+        <section id="skills-projects" aria-labelledby="skills-projects-heading">
+            <header>
+                <h2 id="skills-projects-heading">Kỹ Năng &amp; Dự Án Tiêu Biểu</h2>
+            </header>
+
+            <!-- Tiểu mục kỹ năng -->
+            <div>
+                <h3>Kỹ Năng Chuyên Môn (Technical Skills)</h3>
+                <ul>
+                    <li>HTML5 / Semantic Web (Nâng cao)</li>
+                    <li>CSS3 / Responsive Web Design (Nâng cao)</li>
+                    <li>JavaScript (ES6+) (Thành thạo)</li>
+                    <li>Python &amp; Django/FastAPI (Thành thạo)</li>
+                    <li>Cơ sở dữ liệu: PostgreSQL, MySQL (Khá)</li>
+                    <li>Công cụ quản lý mã nguồn: Git, GitHub &amp; CI/CD (Khá)</li>
+                </ul>
+            </div>
+
+            <!-- Tiểu mục dự án tiêu biểu -->
+            <h3>Dự Án Đã Thực Hiện</h3>
+
+            <!-- ==========================================================================
+                 DỰ ÁN 1: Sử dụng thẻ <article>
+                 Ý NGHĨA: Đại diện cho một sản phẩm phần mềm hoàn chỉnh độc lập.
+                 Bao gồm tiêu đề <h3>, mốc thời gian <time>, đoạn mô tả <p> và danh sách liên kết.
+                 ========================================================================== -->
+            <article>
+                <h3>Hệ Thống Quản Lý Thư Viện Sinh Viên (SmartLib)</h3>
+                <p>
+                    <small>Thời gian thực hiện: <time datetime="2025-11">Tháng 11/2025</time> &bull; Dự án học phần</small>
+                </p>
+                <p>
+                    Ứng dụng web hỗ trợ sinh viên tra cứu tài liệu học tập, đặt lịch mượn sách trực tuyến và nhận 
+                    thông báo quá hạn tự động. Giảm thiểu 60% thời gian xử lý thủ công cho thủ thư.
+                </p>
+                <p>
+                    <strong>Công nghệ sử dụng:</strong> HTML5, CSS3, Python, PostgreSQL, RESTful API
+                </p>
+                <p>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">Xem mã nguồn GitHub</a> | 
+                    <a href="#about">Xem chi tiết dự án</a>
+                </p>
+            </article>
+
+            <!-- ==========================================================================
+                 DỰ ÁN 2: Sử dụng thẻ <article>
+                 Ý NGHĨA: Dự án thứ hai, hoàn toàn độc lập ngữ nghĩa với dự án thứ nhất.
+                 ========================================================================== -->
+            <article>
+                <h3>Nền Tảng Blog Kỹ Thuật &amp; Chia Sẻ Kiến Thức (DevSpace)</h3>
+                <p>
+                    <small>Thời gian thực hiện: <time datetime="2026-03">Tháng 03/2026</time> &bull; Dự án cá nhân</small>
+                </p>
+                <p>
+                    Website chia sẻ bài viết lập trình hỗ trợ viết nội dung bằng Markdown, tô sáng cú pháp code, 
+                    phân mục linh hoạt và tối ưu điểm số Lighthouse SEO/Performance đạt 98/100.
+                </p>
+                <p>
+                    <strong>Công nghệ sử dụng:</strong> Semantic HTML5, Modern JavaScript, SQLite
+                </p>
+                <p>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">Xem mã nguồn GitHub</a> | 
+                    <a href="#about">Xem bản thử nghiệm</a>
+                </p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- ==========================================================================
+             MỤC 3: CONTACT
+             THẺ SEMANTIC: <section>, <address>, <form>
+             Ý NGHĨA & VAI TRÒ CHUẨN HTML5:
+             - <section>: Đóng gói khu vực thông tin liên hệ.
+             - <address>: Thẻ ngữ nghĩa chuyên biệt dùng để cung cấp thông tin liên lạc cho tác giả/chủ sở hữu trang.
+               Nội dung bên trong <address> thường gồm email (mailto:), số điện thoại (tel:) và địa chỉ thực tế.
+             - <form>: Đại diện cho biểu mẫu tương tác cho phép người dùng nhập và gửi dữ liệu.
+             ========================================================================== -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <header>
+                <h2 id="contact-heading">Thông Tin Liên Hệ (Contact)</h2>
+            </header>
+
+            <!-- ==========================================================================
+                 THẺ SEMANTIC: <address>
+                 Ý NGHĨA: Cung cấp thông tin liên hệ chính thức của chủ website.
+                 ========================================================================== -->
+            <address>
+                <p><strong>Họ &amp; Tên:</strong> Nguyễn Văn Dev</p>
+                <p><strong>Địa chỉ:</strong> Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam</p>
+                <p><strong>Thư điện tử (Email):</strong> <a href="mailto:nguyenvandev@example.com">nguyenvandev@example.com</a></p>
+                <p><strong>Điện thoại:</strong> <a href="tel:+84987654321">(+84) 0987 654 321</a></p>
+                <p><strong>Trạng thái:</strong> Sẵn sàng đón nhận cơ hội thực tập / việc làm</p>
+            </address>
+
+            <!-- ==========================================================================
+                 BIỂU MẪU: <form> với các trường nhập dữ liệu nhanh
+                 Ý NGHĨA: Hỗ trợ nhà tuyển dụng hoặc khách truy cập gửi tin nhắn trực tiếp.
+                 Sử dụng các thẻ form semantic: <fieldset>, <legend>, <label>, <input>, <textarea>, <button>
+                 ========================================================================== -->
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Gửi tin nhắn nhanh cho tôi</legend>
+
+                    <p>
+                        <label for="sender-name">Họ và tên của bạn:</label><br>
+                        <input type="text" id="sender-name" name="name" placeholder="Ví dụ: Nguyễn Văn A" required>
+                    </p>
+
+                    <p>
+                        <label for="sender-email">Địa chỉ Email:</label><br>
+                        <input type="email" id="sender-email" name="email" placeholder="name@example.com" required>
+                    </p>
+
+                    <p>
+                        <label for="sender-subject">Chủ đề:</label><br>
+                        <input type="text" id="sender-subject" name="subject" placeholder="Cơ hội việc làm / Hợp tác dự án">
+                    </p>
+
+                    <p>
+                        <label for="sender-message">Nội dung tin nhắn:</label><br>
+                        <textarea id="sender-message" name="message" rows="5" cols="40" placeholder="Nhập lời nhắn của bạn tại đây..." required></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Gửi Tin Nhắn</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- ==========================================================================
+         THẺ SEMANTIC: <footer>
+         Ý NGHĨA & VAI TRÒ CHUẨN HTML5:
+         - Đại diện cho phần chân trang của tài liệu HTML hoặc của một phân đoạn.
+         - Thường chứa thông tin pháp lý, bản quyền, điều khoản dịch vụ, năm phát hành
+           và các liên kết mạng xã hội hoặc thông tin tác giả.
+         ========================================================================== -->
+    <footer>
+        <!-- Thông tin bản quyền sử dụng thẻ semantic <small> -->
+        <p><small>&copy; 2026 Nguyễn Văn Dev. Tất cả quyền được bảo lưu.</small></p>
+        <p><small>Trang web được xây dựng tuân thủ 100% chuẩn cấu trúc Semantic HTML5 &amp; W3C (không sử dụng CSS).</small></p>
+
+        <!-- Danh sách liên kết mạng xã hội -->
+        <nav aria-label="Liên kết mạng xã hội">
+            <ul>
+                <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter/X</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
