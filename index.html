@@ -3,175 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Nguyễn Minh Nhật</title>
+    <meta name="description" content="Portfolio cá nhân - Lập trình viên Web Frontend">
+    <title>Portfolio Cá Nhân | Nguyễn Văn A</title>
 </head>
 <body>
 
-    <!-- ==========================================================================
-         VAI TRÒ CỦA HEADER:
-         Thẻ <header> đại diện cho phần đầu trang hoặc phần giới thiệu của một trang web.
-         Nó thường chứa tiêu đề trang, logo, biểu ngữ giới thiệu và các liên kết điều hướng
-         chính (nav) giúp người dùng định vị và nắm bắt bối cảnh chung của website.
-         ========================================================================== -->
+    <!-- ==========================================
+         1. KHỐI HEADER (<header>)
+         - Vai trò ngữ nghĩa: Đại diện cho phần đầu trang, chứa thông tin định danh (Logo/Tên) 
+           và điều hướng chính của trang web.
+    ========================================== -->
     <header>
-        <h1>Nguyễn Minh Nhật</h1>
-        <p>Sinh viên ngành Công nghệ Thông tin | Định hướng Frontend Developer</p>
+        <div class="logo">
+            <!-- <h1>: Tiêu đề quan trọng nhất của trang web (Heading Level 1) -->
+            <h1>Nguyễn Văn A</h1>
+            <p>Frontend Web Developer</p>
+        </div>
 
-        <!-- ==========================================================================
-             VAI TRÒ CỦA NAV:
-             Thẻ <nav> đại diện cho một khối điều hướng (Navigation), chứa các liên kết
-             chính cho phép người dùng di chuyển giữa các phần nội dung trong cùng trang web
-             hoặc tới các trang khác. Trình đọc màn hình và công cụ tìm kiếm dựa vào thẻ này
-             để xác định cấu trúc điều hướng cốt lõi.
-             ========================================================================== -->
-        <nav>
+        <!-- ==========================================
+             KHỐI NAV (<nav>)
+             - Vai trò ngữ nghĩa: Chứa danh sách các liên kết điều hướng chính (navigation menu) 
+               giúp người dùng và công cụ tìm kiếm dễ dàng duyệt qua các phần của website.
+        ========================================== -->
+        <nav aria-label="Điều hướng chính">
             <ul>
                 <li><a href="#about">Giới thiệu</a></li>
                 <li><a href="#skills">Kỹ năng</a></li>
                 <li><a href="#projects">Dự án</a></li>
-                <li><a href="#career-goals">Mục tiêu nghề nghiệp</a></li>
                 <li><a href="#contact">Liên hệ</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- ==========================================================================
-         VAI TRÒ CỦA MAIN:
-         Thẻ <main> bao bọc toàn bộ nội dung chính, cốt lõi và độc nhất của tài liệu HTML.
-         Mỗi tài liệu chỉ nên có duy nhất một thẻ <main> hiển thị. Thẻ này không chứa
-         các thành phần lặp lại trên nhiều trang như thanh điều hướng, logo hay bản quyền,
-         giúp tối ưu khả năng truy cập (Accessibility) và SEO.
-         ========================================================================== -->
+    <!-- ==========================================
+         2. KHỐI MAIN (<main>)
+         - Vai trò ngữ nghĩa: Chứa nội dung chính, độc nhất của tài liệu HTML.
+           Mỗi trang chỉ nên có DUY NHẤT một thẻ <main> và không chứa nội dung lặp lại 
+           như header, footer hay sidebar chung.
+    ========================================== -->
     <main>
 
-        <!-- ======================================================================
-             VAI TRÒ CỦA SECTION:
-             Thẻ <section> xác định một phân đoạn nội dung theo chủ đề cụ thể trong tài liệu.
-             Mỗi section thường bắt đầu bằng một tiêu đề (h2 - h6) để mô tả chủ đề của nó,
-             giúp cấu trúc tài liệu mạch lạc và phân cấp rõ ràng theo từng mảng nội dung.
-             ====================================================================== -->
-        <!-- Section 1: Giới thiệu bản thân -->
-        <section id="about">
-            <h2>Giới thiệu bản thân</h2>
-            <p>
-                Xin chào! Tôi là <strong>Nguyễn Minh Nhật</strong>, hiện là sinh viên chuyên ngành Công nghệ Thông tin.
-                Tôi có niềm đam mê sâu sắc với lập trình web, đặc biệt là mảng phát triển giao diện người dùng (Frontend Development).
-                Tôi luôn hướng tới việc xây dựng các sản phẩm web có cấu trúc chuẩn mực, tối ưu trải nghiệm người dùng và dễ dàng bảo trì, mở rộng.
-            </p>
-        </section>
-
-        <!-- Section 2: Kỹ năng công nghệ -->
-        <section id="skills">
-            <h2>Kỹ năng công nghệ</h2>
-            <ul>
-                <li>
-                    <strong>HTML:</strong> Nắm vững chuẩn HTML5 Semantic, cấu trúc tài liệu tối ưu cho SEO và khả năng truy cập (Accessibility).
-                </li>
-                <li>
-                    <strong>CSS:</strong> Hiểu rõ các nguyên lý Box Model, Flexbox, CSS Grid, Responsive Web Design và các kỹ thuật tạo kiểu hiện đại.
-                </li>
-                <li>
-                    <strong>JavaScript:</strong> Nắm chắc cú pháp ES6+, thao tác DOM, xử lý sự kiện và lập trình bất đồng bộ (Promise, Async/Await).
-                </li>
-                <li>
-                    <strong>Git/GitHub:</strong> Thành thạo quản lý phiên bản mã nguồn, quy trình làm việc với branch, pull request và cộng tác nhóm trên GitHub.
-                </li>
-            </ul>
-        </section>
-
-        <!-- Section 3: Dự án cá nhân -->
-        <section id="projects">
-            <h2>Dự án cá nhân</h2>
-
-            <!-- ==================================================================
-                 VAI TRÒ CỦA ARTICLE:
-                 Thẻ <article> đại diện cho một khối nội dung độc lập, tự trọn vẹn và
-                 có ý nghĩa riêng biệt ngay cả khi tách khỏi ngữ cảnh xung quanh.
-                 Thẻ này lý tưởng để biểu diễn các bài viết, bài đánh giá, sản phẩm hoặc
-                 từng dự án cụ thể trong danh sách portfolio.
-                 ================================================================== -->
-            <!-- Dự án 1 -->
+        <!-- ==========================================
+             SECTION 1: GIỚI THIỆU BẢN THÂN (<section id="about">)
+             - Vai trò ngữ nghĩa: Định nghĩa một phân đoạn nội dung độc lập theo chủ đề 
+               (ở đây là giới thiệu tóm tắt bản thân và định hướng).
+        ========================================== -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">Giới Thiệu Bản Thân</h2>
             <article>
-                <h3>Website Quản Lý Thư Viện Sách Trực Tuyến</h3>
+                <!-- <figure> & <figcaption>: Chứa hình ảnh minh họa và chú thích đi kèm -->
+                <figure>
+                    <img src="avatar.jpg" alt="Ảnh chân dung Nguyễn Văn A" width="180" height="180">
+                    <figcaption>Nguyễn Văn A - Lập trình viên đam mê sáng tạo giao diện web</figcaption>
+                </figure>
                 <p>
-                    <strong>Mô tả:</strong> Hệ thống web cho phép người dùng tra cứu danh mục sách, quản lý mượn/trả tài liệu và theo dõi lịch sử đọc sách cá nhân theo thời gian thực.
+                    Xin chào! Tôi là một <strong>Frontend Developer</strong> với hơn 2 năm kinh nghiệm trong việc xây dựng
+                    giao diện web hiện đại, tối ưu trải nghiệm người dùng (UX/UI) và tương thích tốt trên nhiều thiết bị.
                 </p>
                 <p>
-                    <strong>Công nghệ sử dụng:</strong> HTML5, CSS3, JavaScript, Git.
+                    Mục tiêu của tôi là phát triển các ứng dụng web hiệu năng cao, chuẩn SEO và thân thiện với người dùng.
+                </p>
+            </article>
+        </section>
+
+        <!-- ==========================================
+             SECTION 2: KỸ NĂNG CHUYÊN MÔN (<section id="skills">)
+             - Vai trò ngữ nghĩa: Phân đoạn nội dung liệt kê các kỹ năng công nghệ và công cụ sử dụng.
+        ========================================== -->
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Kỹ Năng Chuyên Môn</h2>
+            
+            <div>
+                <h3>Frontend Development</h3>
+                <ul>
+                    <li>HTML5 (Semantic Elements, Accessibility/A11y)</li>
+                    <li>CSS3 (Flexbox, Grid, Responsive Design, Animations)</li>
+                    <li>JavaScript (ES6+, DOM Manipulation, Async/Await)</li>
+                    <li>Frameworks & Thư viện: React, Tailwind CSS</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Công Cụ & Kỹ Năng Khác</h3>
+                <ul>
+                    <li>Git / GitHub (Quản lý mã nguồn và làm việc nhóm)</li>
+                    <li>Figma (Đọc và chuyển đổi thiết kế sang mã nguồn UI)</li>
+                    <li>Tối ưu hóa hiệu năng & SEO cơ bản</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 3: DỰ ÁN TIÊU BIỂU (<section id="projects">)
+             - Vai trò ngữ nghĩa: Phân đoạn trưng bày các sản phẩm/dự án đã hoàn thành.
+             - <article>: Mỗi dự án là một khối nội dung độc lập, có thể tái sử dụng hoặc trích xuất riêng biệt.
+        ========================================== -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Dự Án Tiêu Biểu</h2>
+
+            <!-- Dự án 1 -->
+            <article>
+                <h3>1. Nền Tảng Thương Mại Điện Tử (E-Commerce Store)</h3>
+                <p>Website mua sắm trực tuyến với tính năng giỏ hàng, thanh toán và lọc sản phẩm.</p>
+                <p><strong>Công nghệ sử dụng:</strong> HTML5, CSS Grid, React, Redux Toolkit</p>
+                <p>
+                    <a href="https://github.com/example/ecommerce" target="_blank" rel="noopener noreferrer">Xem mã nguồn (GitHub)</a> | 
+                    <a href="https://example.com/demo1" target="_blank" rel="noopener noreferrer">Trải nghiệm Demo</a>
                 </p>
             </article>
 
             <!-- Dự án 2 -->
             <article>
-                <h3>Website Thương Mại Điện Tử Cửa Hàng Đồ Công Nghệ</h3>
+                <h3>2. Ứng Dụng Quản Lý Công Việc (Task Manager App)</h3>
+                <p>Ứng dụng hỗ trợ quản lý công việc hàng ngày với tính năng kéo thả (Drag & Drop) và lưu trữ cục bộ (LocalStorage).</p>
+                <p><strong>Công nghệ sử dụng:</strong> HTML5, Tailwind CSS, JavaScript ES6</p>
                 <p>
-                    <strong>Mô tả:</strong> Nền tảng bán hàng trực tuyến với các tính năng xem chi tiết sản phẩm, lọc theo danh mục giá, giỏ hàng tương tác và kiểm tra dữ liệu đơn hàng.
-                </p>
-                <p>
-                    <strong>Công nghệ sử dụng:</strong> HTML5, CSS3 (Flexbox/Grid), JavaScript (ES6+), GitHub Pages.
-                </p>
-            </article>
-
-            <!-- Dự án 3 -->
-            <article>
-                <h3>Ứng Dụng Quản Lý Công Việc Cá Nhân (Task Manager)</h3>
-                <p>
-                    <strong>Mô tả:</strong> Ứng dụng ghi chú và quản lý danh sách công việc hàng ngày, hỗ trợ phân loại mức độ ưu tiên, đánh dấu hoàn thành và lưu trữ dữ liệu trên LocalStorage.
-                </p>
-                <p>
-                    <strong>Công nghệ sử dụng:</strong> HTML5 Semantic, CSS3, JavaScript, Git.
+                    <a href="https://github.com/example/task-manager" target="_blank" rel="noopener noreferrer">Xem mã nguồn (GitHub)</a> | 
+                    <a href="https://example.com/demo2" target="_blank" rel="noopener noreferrer">Trải nghiệm Demo</a>
                 </p>
             </article>
         </section>
 
-        <!-- Section 4: Mục tiêu nghề nghiệp -->
-        <section id="career-goals">
-            <h2>Mục tiêu nghề nghiệp &amp; Định hướng phát triển</h2>
-            <div>
-                <h3>Mục tiêu ngắn hạn</h3>
-                <p>
-                    Tốt nghiệp đúng hạn với kết quả học tập xuất sắc, củng cố nền tảng kiến thức khoa học máy tính và tìm kiếm cơ hội thực tập vị trí Frontend Developer tại các công ty công nghệ chuyên nghiệp.
-                </p>
-            </div>
-            <div>
-                <h3>Mục tiêu dài hạn</h3>
-                <p>
-                    Trở thành một Frontend Engineer vững vàng về chuyên môn, làm chủ các framework/thư viện hiện đại như React hoặc Vue.js, tiến tới việc nghiên cứu kiến trúc Fullstack và đóng góp vào các dự án phần mềm có quy mô lớn.
-                </p>
-            </div>
-        </section>
-
-        <!-- Section 5: Thông tin liên hệ -->
-        <section id="contact">
-            <h2>Thông tin liên hệ</h2>
-            <p>Bạn có thể kết nối hoặc trao đổi cơ hội hợp tác với tôi qua các kênh sau:</p>
-            <ul>
-                <li>
-                    <strong>Email:</strong> 
-                    <a href="mailto:nhat.nguyen@example.com">nhat.nguyen@example.com</a>
-                </li>
-                <li>
-                    <strong>GitHub:</strong> 
-                    <a href="https://github.com/nguyenminhnhat" target="_blank" rel="noopener noreferrer">github.com/nguyenminhnhat</a>
-                </li>
-                <li>
-                    <strong>LinkedIn:</strong> 
-                    <a href="https://www.linkedin.com/in/nguyenminhnhat" target="_blank" rel="noopener noreferrer">linkedin.com/in/nguyenminhnhat</a>
-                </li>
-            </ul>
+        <!-- ==========================================
+             SECTION 4: LIÊN HỆ (<section id="contact">)
+             - Vai trò ngữ nghĩa: Phân đoạn cung cấp form hoặc thông tin kết nối trực tiếp.
+        ========================================== -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Liên Hệ Với Tôi</h2>
+            <p>Hãy để lại tin nhắn nếu bạn có cơ hội hợp tác hoặc câu hỏi dành cho tôi!</p>
+            
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Họ và tên:</label><br>
+                    <input type="text" id="name" name="name" required placeholder="Nhập tên của bạn...">
+                </div>
+                <br>
+                <div>
+                    <label for="email">Địa chỉ Email:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="email@example.com">
+                </div>
+                <br>
+                <div>
+                    <label for="message">Nội dung tin nhắn:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required placeholder="Nhập nội dung..."></textarea>
+                </div>
+                <br>
+                <button type="submit">Gửi Tin Nhắn</button>
+            </form>
         </section>
 
     </main>
 
-    <!-- ==========================================================================
-         VAI TRÒ CỦA FOOTER:
-         Thẻ <footer> đại diện cho phần chân của một trang web hoặc một phần nội dung.
-         Nó thường chứa thông tin bản quyền (copyright), liên hệ pháp lý, chính sách
-         bảo mật hoặc các liên kết bổ sung hữu ích ở cuối trang.
-         ========================================================================== -->
+    <!-- ==========================================
+         3. KHỐI FOOTER (<footer>)
+         - Vai trò ngữ nghĩa: Chân trang web, chứa thông tin bản quyền, liên kết mạng xã hội 
+           hoặc thông tin pháp lý bổ sung.
+    ========================================== -->
     <footer>
-        <p>&copy; 2026 Nguyễn Minh Nhật. Bản quyền thuộc về tác giả.</p>
-        <p>Portfolio cá nhân được xây dựng theo tiêu chuẩn Semantic HTML5.</p>
+        <p>&copy; 2026 Nguyễn Văn A. Tất cả quyền được bảo lưu.</p>
+        <!-- Thẻ <address>: Dùng riêng cho thông tin liên lạc của tác giả/chủ sở hữu -->
+        <address>
+            Email: <a href="mailto:nguyenvana@example.com">nguyenvana@example.com</a> | 
+            Điện thoại: <a href="tel:+84123456789">0123 456 789</a>
+        </address>
     </footer>
 
 </body>
