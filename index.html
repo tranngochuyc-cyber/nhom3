@@ -3,186 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio cá nhân - Lập trình viên Web Frontend">
+    <meta name="description" content="Portfolio cá nhân - Bài thực hành CSS Grid và Flexbox">
     <title>Portfolio Cá Nhân | Trần Ngọc Huy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <!-- ==========================================
-         1. KHỐI HEADER (<header>)
-         - Vai trò ngữ nghĩa: Đại diện cho phần đầu trang, chứa thông tin định danh (Logo/Tên) 
-           và điều hướng chính của trang web.
-    ========================================== -->
-    <header>
+<body class="page-layout">
+
+    <header class="site-header">
         <div class="logo">
-            <!-- <h1>: Tiêu đề quan trọng nhất của trang web (Heading Level 1) -->
             <h1>Trần Ngọc Huy</h1>
-            <p>Frontend Web Developer</p>
+            <p>MSSV: 125001758 | Software Engineering Student</p>
         </div>
 
-        <!-- ==========================================
-             KHỐI NAV (<nav>)
-             - Vai trò ngữ nghĩa: Chứa danh sách các liên kết điều hướng chính (navigation menu) 
-               giúp người dùng và công cụ tìm kiếm dễ dàng duyệt qua các phần của website.
-        ========================================== -->
         <nav aria-label="Điều hướng chính">
-            <ul>
+            <ul class="nav-list">
                 <li><a href="#about">Giới thiệu</a></li>
                 <li><a href="#skills">Kỹ năng</a></li>
                 <li><a href="#projects">Dự án</a></li>
-                <li><a href="#team">Thành viên</a></li>
+                <li><a href="#team">Nhóm</a></li>
                 <li><a href="#contact">Liên hệ</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- ==========================================
-         2. KHỐI MAIN (<main>)
-         - Vai trò ngữ nghĩa: Chứa nội dung chính, độc nhất của tài liệu HTML.
-           Mỗi trang chỉ nên có DUY NHẤT một thẻ <main> và không chứa nội dung lặp lại 
-           như header, footer hay sidebar chung.
-    ========================================== -->
-    <main>
+    <aside class="sidebar" aria-label="Thông tin nhanh">
+        <div class="avatar" aria-hidden="true">H</div>
 
-        <!-- ==========================================
-             SECTION 1: GIỚI THIỆU BẢN THÂN (<section id="about">)
-             - Vai trò ngữ nghĩa: Định nghĩa một phân đoạn nội dung độc lập theo chủ đề 
-               (ở đây là giới thiệu tóm tắt bản thân và định hướng).
-        ========================================== -->
-        <section id="about" aria-labelledby="about-heading">
-            <h2 id="about-heading">Giới Thiệu Bản Thân</h2>
-            <article>
-                <!-- <figure> & <figcaption>: Chứa hình ảnh minh họa và chú thích đi kèm -->
-                <figure>
-                    <img src="avatar.jpg" alt="Ảnh chân dung Trần Ngọc Huy" width="180" height="180">
-                    <figcaption>Trần Ngọc Huy - Lập trình viên đam mê sáng tạo giao diện web</figcaption>
-                </figure>
-                <p>
-                    Xin chào! Tôi là một <strong>Frontend Developer</strong> với hơn 2 năm kinh nghiệm trong việc xây dựng
-                    giao diện web hiện đại, tối ưu trải nghiệm người dùng (UX/UI) và tương thích tốt trên nhiều thiết bị.
-                </p>
-                <p>
-                    Mục tiêu của tôi là phát triển các ứng dụng web hiệu năng cao, chuẩn SEO và thân thiện với người dùng.
-                </p>
-            </article>
+        <h2>Thông tin cá nhân</h2>
+        <p><strong>Trần Ngọc Huy</strong></p>
+        <p>MSSV: 125001758</p>
+        <p>Sinh viên Công nghệ thông tin</p>
+
+        <h3>Mục tiêu</h3>
+        <p>Phát triển kỹ năng Front-end, xây dựng giao diện web rõ ràng, responsive và dễ sử dụng.</p>
+
+        <h3>Thành viên nhóm</h3>
+        <ul class="member-list">
+            <li><strong>Trần Ngọc Huy</strong><br>125001758 — Trưởng nhóm</li>
+            <li>Lê Văn Khoa<br>125001668</li>
+            <li>Nguyễn Minh Nhật<br>125001448</li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <section id="about" class="card">
+            <h2>Giới Thiệu Bản Thân</h2>
+            <p>
+                Tôi là <strong>Trần Ngọc Huy</strong>, sinh viên định hướng phát triển kỹ năng thiết kế và xây dựng giao diện web.
+                Bài thực hành này tiếp tục sử dụng cấu trúc HTML từ bài trước và bổ sung hệ thống bố cục bằng CSS Grid + Flexbox.
+            </p>
+            <p>
+                Mục tiêu của tôi là tạo giao diện có cấu trúc rõ ràng, dễ đọc, responsive và có thể mở rộng trong các bài thực hành tiếp theo.
+            </p>
         </section>
 
-        <!-- ==========================================
-             SECTION 2: KỸ NĂNG CHUYÊN MÔN (<section id="skills">)
-             - Vai trò ngữ nghĩa: Phân đoạn nội dung liệt kê các kỹ năng công nghệ và công cụ sử dụng.
-        ========================================== -->
-        <section id="skills" aria-labelledby="skills-heading">
-            <h2 id="skills-heading">Kỹ Năng Chuyên Môn</h2>
-            
-            <div>
-                <h3>Frontend Development</h3>
-                <ul>
-                    <li>HTML5 (Semantic Elements, Accessibility/A11y)</li>
-                    <li>CSS3 (Flexbox, Grid, Responsive Design, Animations)</li>
-                    <li>JavaScript (ES6+, DOM Manipulation, Async/Await)</li>
-                    <li>Frameworks & Thư viện: React, Tailwind CSS</li>
-                </ul>
-            </div>
+        <section id="skills" class="card">
+            <h2>Kỹ Năng Chuyên Môn</h2>
+            <p>Danh sách kỹ năng bên dưới sử dụng <code>display: flex</code>, <code>flex-wrap: wrap</code> và <code>gap</code>.</p>
 
-            <div>
-                <h3>Công Cụ & Kỹ Năng Khác</h3>
-                <ul>
-                    <li>Git / GitHub (Quản lý mã nguồn và làm việc nhóm)</li>
-                    <li>Figma (Đọc và chuyển đổi thiết kế sang mã nguồn UI)</li>
-                    <li>Tối ưu hóa hiệu năng & SEO cơ bản</li>
-                </ul>
+            <div class="skills-list">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">CSS Grid</span>
+                <span class="skill-tag">Flexbox</span>
+                <span class="skill-tag">Responsive Design</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
             </div>
         </section>
 
-        <!-- ==========================================
-             SECTION 3: DỰ ÁN TIÊU BIỂU (<section id="projects">)
-             - Vai trò ngữ nghĩa: Phân đoạn trưng bày các sản phẩm/dự án đã hoàn thành.
-             - <article>: Mỗi dự án là một khối nội dung độc lập, có thể tái sử dụng hoặc trích xuất riêng biệt.
-        ========================================== -->
-        <section id="projects" aria-labelledby="projects-heading">
-            <h2 id="projects-heading">Dự Án Tiêu Biểu</h2>
+        <section id="projects" class="card">
+            <h2>Dự Án Tiêu Biểu</h2>
 
-            <!-- Dự án 1 -->
-            <article>
-                <h3>1. Nền Tảng Thương Mại Điện Tử (E-Commerce Store)</h3>
-                <p>Website mua sắm trực tuyến với tính năng giỏ hàng, thanh toán và lọc sản phẩm.</p>
-                <p><strong>Công nghệ sử dụng:</strong> HTML5, CSS Grid, React, Redux Toolkit</p>
-                <p>
-                    <a href="https://github.com/example/ecommerce" target="_blank" rel="noopener noreferrer">Xem mã nguồn (GitHub)</a> | 
-                    <a href="https://example.com/demo1" target="_blank" rel="noopener noreferrer">Trải nghiệm Demo</a>
-                </p>
-            </article>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Portfolio cá nhân</h3>
+                    <p>Trang giới thiệu thông tin, kỹ năng và dự án cá nhân.</p>
+                    <p><strong>Công nghệ:</strong> HTML5, CSS3, Grid, Flexbox.</p>
+                </article>
 
-            <!-- Dự án 2 -->
-            <article>
-                <h3>2. Ứng Dụng Quản Lý Công Việc (Task Manager App)</h3>
-                <p>Ứng dụng hỗ trợ quản lý công việc hàng ngày với tính năng kéo thả (Drag & Drop) và lưu trữ cục bộ (LocalStorage).</p>
-                <p><strong>Công nghệ sử dụng:</strong> HTML5, Tailwind CSS, JavaScript ES6</p>
-                <p>
-                    <a href="https://github.com/example/task-manager" target="_blank" rel="noopener noreferrer">Xem mã nguồn (GitHub)</a> | 
-                    <a href="https://example.com/demo2" target="_blank" rel="noopener noreferrer">Trải nghiệm Demo</a>
-                </p>
-            </article>
+                <article class="project-card">
+                    <h3>Web học tập</h3>
+                    <p>Mẫu giao diện phục vụ việc tổ chức nội dung học tập theo từng khu vực rõ ràng.</p>
+                    <p><strong>Công nghệ:</strong> HTML5, CSS3, Responsive Design.</p>
+                </article>
+            </div>
         </section>
 
-        <section id="team" aria-labelledby="team-heading">
-            <h2 id="team-heading">Thành Viên Nhóm</h2>
-            <article>
-                <h3>Trần Ngọc Huy — MSSV: 125001758</h3>
-                <p><strong>Trưởng nhóm / Thành viên chính:</strong> phụ trách chính cấu trúc trang, nội dung, CSS Grid, Flexbox và hoàn thiện sản phẩm.</p>
-            </article>
-            <article>
-                <h3>Lê Văn Khoa — MSSV: 125001668</h3>
-                <p>Thành viên: hỗ trợ nội dung và kiểm tra bố cục.</p>
-            </article>
-            <article>
-                <h3>Nguyễn Minh Nhật — MSSV: 125001448</h3>
-                <p>Thành viên: hỗ trợ kiểm tra giao diện và nội dung.</p>
-            </article>
+        <section id="team" class="card">
+            <h2>Thành Viên Nhóm & Phân Công</h2>
+
+            <div class="team-grid">
+                <article class="member-card leader">
+                    <h3>Trần Ngọc Huy</h3>
+                    <p><strong>MSSV:</strong> 125001758</p>
+                    <p><strong>Vai trò:</strong> Trưởng nhóm / phụ trách chính</p>
+                    <p>Phụ trách cấu trúc HTML, CSS Grid, Flexbox, responsive, tổng hợp và hoàn thiện bài.</p>
+                </article>
+
+                <article class="member-card">
+                    <h3>Lê Văn Khoa</h3>
+                    <p><strong>MSSV:</strong> 125001668</p>
+                    <p><strong>Vai trò:</strong> Thành viên</p>
+                    <p>Hỗ trợ kiểm tra nội dung và bố cục.</p>
+                </article>
+
+                <article class="member-card">
+                    <h3>Nguyễn Minh Nhật</h3>
+                    <p><strong>MSSV:</strong> 125001448</p>
+                    <p><strong>Vai trò:</strong> Thành viên</p>
+                    <p>Hỗ trợ kiểm tra giao diện và responsive.</p>
+                </article>
+            </div>
         </section>
 
-        <!-- ==========================================
-             SECTION 4: LIÊN HỆ (<section id="contact">)
-             - Vai trò ngữ nghĩa: Phân đoạn cung cấp form hoặc thông tin kết nối trực tiếp.
-        ========================================== -->
-        <section id="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Liên Hệ Với Tôi</h2>
-            <p>Hãy để lại tin nhắn nếu bạn có cơ hội hợp tác hoặc câu hỏi dành cho tôi!</p>
-            
-            <form action="#" method="post">
-                <div>
-                    <label for="name">Họ và tên:</label><br>
-                    <input type="text" id="name" name="name" required placeholder="Nhập tên của bạn...">
-                </div>
-                <br>
-                <div>
-                    <label for="email">Địa chỉ Email:</label><br>
-                    <input type="email" id="email" name="email" required placeholder="email@example.com">
-                </div>
-                <br>
-                <div>
-                    <label for="message">Nội dung tin nhắn:</label><br>
-                    <textarea id="message" name="message" rows="4" cols="50" required placeholder="Nhập nội dung..."></textarea>
-                </div>
-                <br>
-                <button type="submit">Gửi Tin Nhắn</button>
+        <section id="contact" class="card">
+            <h2>Liên Hệ</h2>
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" name="name" placeholder="Nhập tên của bạn">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com">
+
+                <label for="message">Nội dung</label>
+                <textarea id="message" name="message" rows="4" placeholder="Nhập nội dung..."></textarea>
+
+                <button type="submit">Gửi tin nhắn</button>
             </form>
         </section>
-
     </main>
 
-    <!-- ==========================================
-         3. KHỐI FOOTER (<footer>)
-         - Vai trò ngữ nghĩa: Chân trang web, chứa thông tin bản quyền, liên kết mạng xã hội 
-           hoặc thông tin pháp lý bổ sung.
-    ========================================== -->
-    <footer>
-        <p>&copy; 2026 Trần Ngọc Huy. Tất cả quyền được bảo lưu.</p>
-        <!-- Thẻ <address>: Dùng riêng cho thông tin liên lạc của tác giả/chủ sở hữu -->
-        <address>
-            Email: <a href="mailto:125001758@student.lhu.edu.vn">125001758@student.lhu.edu.vn</a> | 
-            Điện thoại: <span>MSSV: 125001758</span>
-        </address>
+    <footer class="site-footer">
+        <p>&copy; 2026 Trần Ngọc Huy — MSSV 125001758.</p>
+        <p>Bài thực hành Tuần 3: CSS Layout System — CSS Grid + Flexbox.</p>
     </footer>
 
 </body>
