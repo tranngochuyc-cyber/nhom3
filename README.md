@@ -2,6 +2,8 @@
 
 Website bốn trang của Nhóm 3 trong bài thực hành Thiết kế Web. Trang chủ giới thiệu nhóm; ba trang còn lại giới thiệu từng thành viên và phần việc của họ. Nội dung được đối chiếu với README và lịch sử repository trước khi viết lại, không tự thêm thành tích cá nhân.
 
+**Xem website:** [Portfolio Nhóm 3 trên GitHub Pages](https://tranngochuyc-cyber.github.io/nhom3/)
+
 ## Các trang
 
 | Trang | Nội dung |
