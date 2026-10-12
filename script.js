@@ -1,4 +1,6 @@
 document.documentElement.classList.add('js');
+
+// Menu chung của bốn trang; liên kết vẫn hiển thị khi JavaScript tắt.
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#primary-navigation');
 menuButton.addEventListener('click', () => {
@@ -10,5 +12,13 @@ navigation.addEventListener('click', (event) => {
   if (event.target.closest('a')) {
     menuButton.setAttribute('aria-expanded', 'false');
     navigation.classList.remove('is-open');
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+    menuButton.setAttribute('aria-expanded', 'false');
+    navigation.classList.remove('is-open');
+    menuButton.focus();
   }
 });
