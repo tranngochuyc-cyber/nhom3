@@ -13,6 +13,18 @@ Website bốn trang của Nhóm 3 trong bài thực hành Thiết kế Web. Tran
 | [khoa.html](khoa.html) | Lê Văn Khoa — MSSV 125001668, hỗ trợ nội dung và bố cục |
 | [nhat.html](nhat.html) | Nguyễn Minh Nhật — MSSV 125001448, hỗ trợ giao diện và responsive |
 
+Mỗi trang cá nhân trình bày theo ba phần: **Vai trò**, **Phần phụ trách**, **Việc cần làm**. Danh sách việc cần làm là kế hoạch kiểm tra Tuần 6, chưa được tính là kết quả đã hoàn thành.
+
+## Ảnh thành viên
+
+- `assets/nhat.png`: ảnh 1 do người dùng cung cấp, đặt cho Nguyễn Minh Nhật.
+- `assets/huy.jpg`: ảnh 2 do người dùng cung cấp, ảnh mèo làm đại diện cho Trần Ngọc Huy.
+- `assets/khoa.png`: ảnh 3 do người dùng cung cấp, đặt cho Lê Văn Khoa.
+
+## Sản phẩm hiển thị trên trang nhóm
+
+Trang chủ liên kết đến website bốn trang hiện tại, mã nguồn bài CSS Grid/Flexbox Tuần 3 ở commit `1eaa0d9`, và hai bản HTML cá nhân trong nhánh `Khoa_Le` và `nhat-portfolio`. Các bản HTML cá nhân được ghi là bản phác thảo học tập, không được trình bày như sản phẩm đã triển khai.
+
 Mở `index.html` bằng trình duyệt để xem. Các liên kết dùng đường dẫn tương đối, nên bốn trang hoạt động khi mở trực tiếp hoặc đăng lên một máy chủ tĩnh. Không cần cài thư viện hay đăng nhập. `style.css` dùng chung cho toàn bộ trang; `script.js` chỉ điều khiển menu trên màn hình nhỏ. Nếu JavaScript tắt, các liên kết vẫn hiển thị.
 
 ## Phạm vi Tuần 6
