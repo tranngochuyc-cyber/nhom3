@@ -1,4 +1,4 @@
-# Portfolio nhóm 3 — hoàn thiện giao diện Tuần 6
+# Portfolio — Tuần 6
 
 Website tiếp tục bài thực hành CSS Layout System Tuần 3. Bố cục chính vẫn dùng CSS Grid (sidebar và main tỉ lệ 1:3); điều hướng và danh sách kỹ năng vẫn dùng Flexbox. Tuần 6 tập trung rà soát giao diện, tương thích di động, dọn CSS và cải thiện trải nghiệm.
 
