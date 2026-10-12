@@ -1,41 +1,50 @@
-# Bài thực hành Tuần 3 — CSS Layout System
+# Portfolio nhóm 3 — hoàn thiện giao diện Tuần 6
 
-Bài thực hành tiếp nối từ cấu trúc HTML của bài trước, bổ sung CSS Grid và Flexbox để hoàn thiện Portfolio cá nhân.
+Website tiếp tục bài thực hành CSS Layout System Tuần 3. Bố cục chính vẫn dùng CSS Grid (sidebar và main tỉ lệ 1:3); điều hướng và danh sách kỹ năng vẫn dùng Flexbox. Tuần 6 tập trung rà soát giao diện, tương thích di động, dọn CSS và cải thiện trải nghiệm.
 
-## Thành viên nhóm
+## Thành viên
 
-| STT | Họ và tên | MSSV | Vai trò | Phân công |
-|---:|---|---:|---|---|
-| 1 | **Trần Ngọc Huy** | **125001758** | **Trưởng nhóm / phụ trách chính** | Cấu trúc HTML, CSS Grid, Flexbox, responsive, tổng hợp và hoàn thiện bài |
-| 2 | Lê Văn Khoa | 125001668 | Thành viên | Hỗ trợ kiểm tra nội dung và bố cục |
-| 3 | Nguyễn Minh Nhật | 125001448 | Thành viên | Hỗ trợ kiểm tra giao diện và responsive |
+| Họ và tên | MSSV | Vai trò ghi trong bài gốc |
+|---|---:|---|
+| Trần Ngọc Huy | 125001758 | Trưởng nhóm, HTML/CSS và tổng hợp |
+| Lê Văn Khoa | 125001668 | Hỗ trợ nội dung và bố cục |
+| Nguyễn Minh Nhật | 125001448 | Hỗ trợ giao diện và responsive |
 
-## Yêu cầu đã thực hiện
+## Xem sản phẩm
 
-- Giữ và phát triển từ cấu trúc HTML Portfolio của bài trước.
-- CSS Grid cho bố cục tổng thể.
-- Chia Sidebar và Main Content theo tỉ lệ `1fr 3fr`.
-- Header và Footer trải toàn bộ chiều rộng bằng `grid-column: 1 / -1`.
-- Flexbox cho Navigation và danh sách kỹ năng.
-- `flex-wrap: wrap` để các skill tag tự xuống dòng.
-- Sử dụng `gap` để tạo khoảng cách đồng nhất.
-- Responsive để tránh vỡ bố cục trên màn hình nhỏ.
-- Có `prompt_log.md` ghi lại các prompt AI dùng để hỗ trợ CSS.
+Mở `index.html` bằng trình duyệt. Trang không cần bước cài đặt hay dịch vụ ngoài. Gồm giới thiệu, kỹ năng, dự án, thành viên và biểu mẫu soạn nội dung liên hệ. Biểu mẫu **chưa gửi email**; nút chỉ sao chép nội dung sau khi kiểm tra các trường bắt buộc.
 
-## Cấu trúc file
+## Design system
+
+- Màu chính `#173f73`, màu nhấn `#2563eb`, chữ `#1f2937`; nền sáng giúp dễ đọc.
+- Chữ dùng Arial/Helvetica với phông dự phòng của hệ điều hành để hiển thị tiếng Việt.
+- Khoảng cách chính 20px; thẻ bo góc 10–14px.
+- Khung desktop dùng Grid, thẻ dự án và thành viên dùng Grid; điều hướng, kỹ năng và biểu mẫu dùng Flexbox.
+- Ở màn hình hẹp, nội dung về một cột. Menu mở bằng nút có trạng thái `aria-expanded`; nếu JavaScript bị tắt, các liên kết vẫn hiển thị.
+- Hiệu ứng nhấc thẻ 0,2 giây; `prefers-reduced-motion` loại bỏ chuyển động cho người dùng có thiết lập này.
+
+## Đối chiếu yêu cầu Tuần 6
+
+| Tiêu chí | Kết quả trong repo |
+|---|---|
+| Rà soát tương thích màn hình | CSS cho desktop, tablet và mobile; cần kiểm tra trên thiết bị thật trước khi chấm |
+| CSS refactoring | Có biến màu/khoảng cách; giữ cấu trúc bài Tuần 3 |
+| W3C Validation | HTML có ngôn ngữ, nhãn biểu mẫu, thuộc tính hợp lệ; chưa có kết quả xác nhận từ validator.w3.org |
+| Điều hướng | Liên kết đến các mục có nội dung; menu mobile có thể mở/đóng |
+| Ảnh WebP | Trang không có ảnh raster nên không có ảnh cần chuyển sang WebP |
+| Lighthouse ≥ 80, cải thiện ≥ 10 điểm | Chưa đo trên môi trường trình duyệt chuẩn; không công bố điểm giả |
+| Hiệu ứng và khả năng tiếp cận | Hover/focus, skip link, giảm chuyển động, vùng chạm menu 44px |
+| Git ≥ 10 commit từ các thành viên | Xem lịch sử GitHub; số commit/đóng góp từng người cần xác nhận bằng Insights |
+| Index hub của 6 bài thực hành | Repo hiện chỉ chứa portfolio này; chưa có đủ 6 sản phẩm để tạo liên kết hoạt động |
+
+## Cấu trúc
 
 ```text
-Bai_3_CSS_Grid_Flexbox/
-├── index.html
-├── style.css
-├── README.md
-└── prompt_log.md
+index.html      Nội dung portfolio
+style.css       Bố cục và giao diện
+script.js       Menu di động và sao chép biểu mẫu
+favicon.svg     Biểu tượng tab
+prompt_log.md   Lịch sử prompt của bài trước
 ```
 
-## Cách chạy
-
-Mở `index.html` trực tiếp bằng trình duyệt hoặc dùng Live Server trong VS Code.
-
-## Nội dung bài
-
-Đây là bài thực hành môn Thiết kế Web, Tuần 3 — CSS Layout System.
+Các file ZIP là bản lưu cũ của nhóm; website chạy từ các file nguồn ở thư mục gốc.
