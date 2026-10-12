@@ -1,50 +1,30 @@
 # Portfolio — Tuần 6
 
-Website tiếp tục bài thực hành CSS Layout System Tuần 3. Bố cục chính vẫn dùng CSS Grid (sidebar và main tỉ lệ 1:3); điều hướng và danh sách kỹ năng vẫn dùng Flexbox. Tuần 6 tập trung rà soát giao diện, tương thích di động, dọn CSS và cải thiện trải nghiệm.
+Website bốn trang của Nhóm 3 trong bài thực hành Thiết kế Web. Trang chủ giới thiệu nhóm; ba trang còn lại giới thiệu từng thành viên và phần việc của họ. Nội dung được đối chiếu với README và lịch sử repository trước khi viết lại, không tự thêm thành tích cá nhân.
 
-## Thành viên
+## Các trang
 
-| Họ và tên | MSSV | Vai trò ghi trong bài gốc |
-|---|---:|---|
-| Trần Ngọc Huy | 125001758 | Trưởng nhóm, HTML/CSS và tổng hợp |
-| Lê Văn Khoa | 125001668 | Hỗ trợ nội dung và bố cục |
-| Nguyễn Minh Nhật | 125001448 | Hỗ trợ giao diện và responsive |
-
-## Xem sản phẩm
-
-Mở `index.html` bằng trình duyệt. Trang không cần bước cài đặt hay dịch vụ ngoài. Gồm giới thiệu, kỹ năng, dự án, thành viên và biểu mẫu soạn nội dung liên hệ. Biểu mẫu **chưa gửi email**; nút chỉ sao chép nội dung sau khi kiểm tra các trường bắt buộc.
-
-## Design system
-
-- Màu chính `#173f73`, màu nhấn `#2563eb`, chữ `#1f2937`; nền sáng giúp dễ đọc.
-- Chữ dùng Arial/Helvetica với phông dự phòng của hệ điều hành để hiển thị tiếng Việt.
-- Khoảng cách chính 20px; thẻ bo góc 10–14px.
-- Khung desktop dùng Grid, thẻ dự án và thành viên dùng Grid; điều hướng, kỹ năng và biểu mẫu dùng Flexbox.
-- Ở màn hình hẹp, nội dung về một cột. Menu mở bằng nút có trạng thái `aria-expanded`; nếu JavaScript bị tắt, các liên kết vẫn hiển thị.
-- Hiệu ứng nhấc thẻ 0,2 giây; `prefers-reduced-motion` loại bỏ chuyển động cho người dùng có thiết lập này.
-
-## Đối chiếu yêu cầu Tuần 6
-
-| Tiêu chí | Kết quả trong repo |
+| Trang | Nội dung |
 |---|---|
-| Rà soát tương thích màn hình | CSS cho desktop, tablet và mobile; cần kiểm tra trên thiết bị thật trước khi chấm |
-| CSS refactoring | Có biến màu/khoảng cách; giữ cấu trúc bài Tuần 3 |
-| W3C Validation | HTML có ngôn ngữ, nhãn biểu mẫu, thuộc tính hợp lệ; chưa có kết quả xác nhận từ validator.w3.org |
-| Điều hướng | Liên kết đến các mục có nội dung; menu mobile có thể mở/đóng |
-| Ảnh WebP | Trang không có ảnh raster nên không có ảnh cần chuyển sang WebP |
-| Lighthouse ≥ 80, cải thiện ≥ 10 điểm | Chưa đo trên môi trường trình duyệt chuẩn; không công bố điểm giả |
-| Hiệu ứng và khả năng tiếp cận | Hover/focus, skip link, giảm chuyển động, vùng chạm menu 44px |
-| Git ≥ 10 commit từ các thành viên | Xem lịch sử GitHub; số commit/đóng góp từng người cần xác nhận bằng Insights |
-| Index hub của 6 bài thực hành | Repo hiện chỉ chứa portfolio này; chưa có đủ 6 sản phẩm để tạo liên kết hoạt động |
+| [index.html](index.html) | Giới thiệu Nhóm 3, ba thành viên, quá trình học và nội dung Tuần 6 |
+| [huy.html](huy.html) | Trần Ngọc Huy — MSSV 125001758, trưởng nhóm |
+| [khoa.html](khoa.html) | Lê Văn Khoa — MSSV 125001668, hỗ trợ nội dung và bố cục |
+| [nhat.html](nhat.html) | Nguyễn Minh Nhật — MSSV 125001448, hỗ trợ giao diện và responsive |
 
-## Cấu trúc
+Mở `index.html` bằng trình duyệt để xem. Các liên kết dùng đường dẫn tương đối, nên bốn trang hoạt động khi mở trực tiếp hoặc đăng lên một máy chủ tĩnh. Không cần cài thư viện hay đăng nhập. `style.css` dùng chung cho toàn bộ trang; `script.js` chỉ điều khiển menu trên màn hình nhỏ. Nếu JavaScript tắt, các liên kết vẫn hiển thị.
 
-```text
-index.html      Nội dung portfolio
-style.css       Bố cục và giao diện
-script.js       Menu di động và sao chép biểu mẫu
-favicon.svg     Biểu tượng tab
-prompt_log.md   Lịch sử prompt của bài trước
-```
+## Phạm vi Tuần 6
 
-Các file ZIP là bản lưu cũ của nhóm; website chạy từ các file nguồn ở thư mục gốc.
+- HTML có cấu trúc, CSS Grid và Flexbox, media query và JavaScript thao tác DOM cơ bản.
+- Điều hướng giữa bốn trang; menu điện thoại có thể mở và đóng, có `aria-expanded`.
+- Typography tiếng Việt dùng Arial và phông dự phòng; nội dung tối thiểu 15px ở di động.
+- Hiệu ứng hover ngắn, tuân theo `prefers-reduced-motion`.
+- Trang không dùng ảnh raster nên không cần chuyển ảnh sang WebP.
+- Chưa công bố điểm Lighthouse hay kết quả W3C Validator nếu chưa có báo cáo đo thực tế.
+- Repo chưa chứa đủ sáu bài thực hành riêng nên không tạo liên kết giả cho index hub sáu bài.
+
+## Nội dung và giới hạn
+
+Thông tin tên, mã sinh viên và vai trò dựa trên tài liệu nhóm đã có. Các thẻ “nội dung học tập” mô tả phần việc trong bài, không phải tuyên bố mức độ thành thạo. Nhóm có thể tự bổ sung thông tin cá nhân, ảnh và dự án thực tế sau khi từng thành viên xác nhận.
+
+Website không có biểu mẫu gửi thư hay dịch vụ bên ngoài. Các tệp ZIP trong repository là bản lưu cũ, không cần cho website hiện tại.
