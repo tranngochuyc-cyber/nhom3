@@ -8,6 +8,7 @@
   <title>Lê Văn Khoa | Portfolio — Tuần 6</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="khoa-tuan6.css">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -71,6 +72,24 @@
             <li>Gửi danh sách chỉnh sửa cụ thể cho nhóm trước khi nộp.</li>
           </ul>
           <p class="small-note">Đây là danh sách công việc của nhóm, không phải xác nhận đã hoàn thành.</p>
+        </section>
+        <section class="panel" id="design-system" aria-labelledby="design-system-heading">
+          <p class="eyebrow">PHẦN 04 · DESIGN SYSTEM</p>
+          <h2 id="design-system-heading">Quy tắc giao diện đang sử dụng</h2>
+          <p>Các màu bên dưới lấy trực tiếp từ biến CSS của website. Việc gom màu và khoảng cách thành quy tắc chung giúp nhóm giữ giao diện nhất quán khi chỉnh sửa.</p>
+          <ul class="khoa-token-grid" aria-label="Bảng màu giao diện">
+            <li><span class="khoa-color-preview khoa-navy" aria-hidden="true"></span><strong>Màu chủ đạo</strong><code>--navy: #173f73</code></li>
+            <li><span class="khoa-color-preview khoa-blue" aria-hidden="true"></span><strong>Màu nhấn</strong><code>--blue: #2563eb</code></li>
+            <li><span class="khoa-color-preview khoa-soft" aria-hidden="true"></span><strong>Màu nền</strong><code>--soft: #eef3f9</code></li>
+          </ul>
+          <h3>Nguyên tắc rà soát nội dung</h3>
+          <ul class="task-list">
+            <li>Giữ một tiêu đề chính <code>h1</code> và sử dụng <code>h2</code>, <code>h3</code> có thứ tự.</li>
+            <li>Diễn đạt ngắn gọn, dùng danh sách khi có nhiều đầu việc, không để thông tin cá nhân mẫu.</li>
+            <li>Đảm bảo liên kết giữa trang nhóm và ba trang thành viên có nhãn dễ hiểu.</li>
+            <li>Kiểm tra độ tương phản, khoảng cách và cách ngắt dòng khi dùng màn hình nhỏ.</li>
+          </ul>
+          <p class="small-note">Đây là tài liệu giao diện và tiêu chí kiểm tra, không phải kết quả W3C hoặc Lighthouse.</p>
         </section>
       </div>
       <aside class="profile-aside">

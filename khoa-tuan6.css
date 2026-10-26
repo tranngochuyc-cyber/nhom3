@@ -1,0 +1,37 @@
+/* Giao diện bổ trợ cho phần Design System trên trang Khoa.
+   Kế thừa màu sắc từ style.css, không đổi giao diện các trang khác. */
+.khoa-token-grid {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 155px), 1fr));
+  gap: 12px;
+}
+.khoa-token-grid li {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 7px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+.khoa-token-grid code {
+  font-size: .88rem;
+  overflow-wrap: anywhere;
+}
+.khoa-color-preview {
+  display: block;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.khoa-navy { background: var(--navy); }
+.khoa-blue { background: var(--blue); }
+.khoa-soft { background: var(--soft); }
+@media (max-width: 680px) {
+  .khoa-token-grid { grid-template-columns: 1fr; }
+  .khoa-token-grid code, .khoa-token-grid strong { font-size: 1rem; }
+}
