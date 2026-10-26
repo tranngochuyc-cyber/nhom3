@@ -1,0 +1,56 @@
+/* Responsive và motion demo cho trang Nhật. Các lớp chỉ ảnh hưởng trang cá nhân. */
+.nhat-device-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0 28px;
+}
+.nhat-device-grid article {
+  padding: 16px;
+  border: 1px solid var(--line);
+  background: var(--soft);
+  border-radius: 12px;
+  min-width: 0;
+}
+.nhat-device-grid strong {
+  display: block;
+  color: var(--navy);
+  font-size: 1.25rem;
+}
+.nhat-device-grid span { display: block; font-weight: 700; margin: 3px 0 8px; }
+.nhat-device-grid p { color: var(--muted); font-size: 1rem; margin: 0; }
+.nhat-motion-demo {
+  height: 34px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: var(--soft);
+  margin-bottom: 24px;
+}
+.nhat-motion-runner {
+  display: block;
+  width: 32%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--navy), var(--blue));
+  animation: nhat-motion 2.8s ease-in-out infinite alternate;
+}
+@keyframes nhat-motion {
+  from { transform: translateX(0); }
+  to { transform: translateX(210%); }
+}
+@media (max-width: 780px) {
+  .nhat-device-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 680px) {
+  .nhat-device-grid article { padding: 18px; }
+  .nhat-device-grid strong, .nhat-device-grid span, .nhat-device-grid p { font-size: 1rem; }
+  .nhat-motion-demo { height: 40px; }
+  .small-note, .profile-portrait figcaption, .task-list, .tags span { font-size: 1rem; }
+  .profile-hero { flex-wrap: wrap; }
+  .profile-hero > div { min-width: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nhat-motion-runner { animation: none; }
+}

@@ -8,6 +8,7 @@
   <title>Nguyễn Minh Nhật | Portfolio — Tuần 6</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nhat-tuan6.css">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -71,6 +72,27 @@
             <li>Đối chiếu giao diện trước/sau khi nhóm sửa lỗi.</li>
           </ul>
           <p class="small-note">Đây là danh sách công việc của nhóm, không phải xác nhận đã hoàn thành.</p>
+        </section>
+        <section class="panel" id="mobile-checklist" aria-labelledby="mobile-checklist-heading">
+          <p class="eyebrow">PHẦN 04 · RESPONSIVE & HIỆU ỨNG</p>
+          <h2 id="mobile-checklist-heading">Kiểm tra giao diện trên nhiều thiết bị</h2>
+          <p>Ba kích thước tham chiếu từ bài thực hành Responsive. Các thẻ bên dưới tự đổi từ ba cột sang một cột theo chiều rộng màn hình.</p>
+          <div class="nhat-device-grid" aria-label="Các mốc màn hình cần kiểm tra">
+            <article><strong>375px</strong><span>Điện thoại</span><p>Điều hướng dễ chạm, không cuộn ngang.</p></article>
+            <article><strong>768px</strong><span>Máy tính bảng</span><p>Khoảng cách và cột nội dung dễ đọc.</p></article>
+            <article><strong>1024px</strong><span>Máy tính</span><p>Bố cục hai cột và ảnh hiển thị rõ.</p></article>
+          </div>
+          <h3>Minh họa hiệu ứng có thể giảm chuyển động</h3>
+          <p>Ô minh họa chuyển động tự động bằng <code>transform</code>; khi thiết bị bật chế độ giảm chuyển động, hiệu ứng sẽ tắt.</p>
+          <div class="nhat-motion-demo" role="img" aria-label="Thanh minh họa có hiệu ứng chuyển động nhẹ và hỗ trợ giảm chuyển động">
+            <span class="nhat-motion-runner" aria-hidden="true"></span>
+          </div>
+          <ul class="task-list">
+            <li>Kiểm tra menu di động bằng chuột, cảm ứng và phím Tab/Escape.</li>
+            <li>Xem giao diện ở 375px, 768px và 1024px; ghi lại lỗi nếu có.</li>
+            <li>Đảm bảo nút bấm và liên kết có vùng chạm đủ lớn; không dùng hiệu ứng gây khó chịu.</li>
+          </ul>
+          <p class="small-note">Đây là hạng mục minh họa và danh sách kiểm tra, không phải xác nhận đã đo Lighthouse hay thử trên thiết bị thật.</p>
         </section>
       </div>
       <aside class="profile-aside">
