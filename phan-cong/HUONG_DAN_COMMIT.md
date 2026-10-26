@@ -59,7 +59,7 @@ git push -u origin bai-tap/khoa-6-tuan
 
 - Không tự đặt `GIT_AUTHOR_DATE`, `GIT_COMMITTER_DATE` hoặc `git commit --date` về các ngày đã qua để giả lịch sử.
 - GitHub hiển thị **ngày commit mới thực tế**. Ngày ghi trong README chỉ là ngày buổi học được phân công.
-- Các commit do Codex tạo năm 2026-10-12 vẫn là commit của Codex. Chỉ chuyển Author sang thành viên nếu người đó thực sự là tác giả phần nội dung và có xác nhận.
+- Commit đã có metadata tác giả do công cụ tự động tạo vẫn giữ nguyên nguồn gốc lịch sử. Chỉ chuyển Author sang thành viên nếu người đó thực sự là tác giả nội dung và có bằng chứng xác nhận.
 - Các phần việc mới do trợ lý phác thảo không được tính là đóng góp đã hoàn thành của các sinh viên.
 
 ## Giữ website Tuần 6

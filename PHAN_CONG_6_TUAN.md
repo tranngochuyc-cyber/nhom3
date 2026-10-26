@@ -8,7 +8,7 @@
 2. Tên chủ đề được suy ra từ **tiêu đề URL Gamma do nhóm gửi**; hiện chưa thể truy xuất toàn văn bên trong Gamma. Do đó phải đối chiếu lại tiêu chí chính xác trước khi tuyên bố đạt bài.
 3. Các ngày 07/09, 14/09, 21/09, 28/09, 05/10, 12/10 là **mốc buổi học**, không phải ngày được phép viết ngược vào commit mới. Bỏ 19/10, 26/10.
 4. Nhiệm vụ được phân theo thế mạnh/vai trò đã mô tả trong README: **Huy tích hợp**, **Khoa nội dung/UI**, **Nhật responsive/tương tác**. Không để ba người cùng sửa một file trong lúc làm độc lập.
-5. Mỗi nhiệm vụ chỉ hoàn thành khi thành viên thực hiện/chỉnh sửa và **tự commit bằng email GitHub đã xác minh**; bản soạn sẵn bởi ChatGPT/Codex là khung giao việc, **không được giả là commit tự tay sinh viên đã làm trước đây**.
+5. Mỗi nhiệm vụ chỉ hoàn thành khi thành viên thực hiện/chỉnh sửa và **tự commit bằng email GitHub đã xác minh**. Kế hoạch giao việc do công cụ soạn không được tính là commit của sinh viên đã thực hiện trong quá khứ.
 6. Bài tập và bản lưu trong nhánh `ho-so-6-tuan` hoặc nhánh cá nhân; **website cuối Tuần 6 trên `main` giữ nguyên**. Mọi thay đổi vào main cần review để không làm mất site.
 
 ## Tài khoản và nhánh nhận việc
@@ -18,6 +18,14 @@
 | Trần Ngọc Huy | `tranngochuyc@gmail.com` | `bai-tap/huy-6-tuan` | Trưởng nhóm — cấu trúc, tích hợp, phát hành |
 | Lê Văn Khoa | `khoa44905@gmail.com` | `bai-tap/khoa-6-tuan` | Thành viên — nội dung, typography, components |
 | Nguyễn Minh Nhật | `nhatlatao01@gmail.com` | `bai-tap/nhat-6-tuan` | Thành viên — giao diện, responsive, tương tác |
+
+## Trách nhiệm của đúng ba thành viên
+
+- **Trần Ngọc Huy (Leader):** khởi tạo và quản lý nhánh, xương sống HTML, CSS layout, tích hợp, kiểm tra và README.
+- **Lê Văn Khoa (Thành viên 1):** HTML nội dung, typography, design system, card/hover, kiểm lỗi giao diện và nội dung.
+- **Nguyễn Minh Nhật (Thành viên 2):** CSS cơ bản, semantic bổ trợ, project gallery, responsive/mobile QA, animation và performance.
+
+**Đầu mối sản phẩm tuần 6:** `index.html` và `huy.html` — Huy; `khoa.html` — Khoa; `nhat.html` — Nhật. Các module `style.css`, `script.js` do nhóm phối hợp theo phân công bên dưới; phân công không đồng nghĩa đã xác minh người thực sự tạo ra mỗi commit.
 
 ## 18 sản phẩm riêng (mỗi người 1 sản phẩm/tuần)
 
@@ -49,4 +57,4 @@
 
 ## Trạng thái xác thực
 
-Không có sáu commit mỗi email trong quá khứ. Đến ngày lập kế hoạch, Git chỉ chứng thực một số mốc thực tế (xem `HO_SO_6_TUAN.md`). Những commit chuẩn bị kế hoạch do trợ lý tạo **mang tác giả công cụ**, không phải thành viên.
+Không có sáu commit mỗi email trong quá khứ. Đến ngày lập kế hoạch, Git chỉ chứng thực một số mốc thực tế (xem `HO_SO_6_TUAN.md`). Những commit chuẩn bị kế hoạch bằng công cụ tự động không được tính là commit trực tiếp của thành viên.
