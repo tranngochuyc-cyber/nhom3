@@ -1,0 +1,24 @@
+import assert from "node:assert/strict";
+import { MEMBERS, classifyScore, findMembers, validateTask, readTasks, taskStats } from "./logic.mjs";
+
+assert.deepEqual(classifyScore(""), { ok: false, message: "Vui lòng nhập điểm." });
+assert.equal(classifyScore("-1").ok, false);
+assert.equal(classifyScore("11").ok, false);
+assert.equal(classifyScore("abc").ok, false);
+assert.equal(classifyScore("8.5").category, "Giỏi");
+assert.equal(classifyScore("6.5").category, "Khá");
+assert.equal(classifyScore(5).category, "Đạt");
+assert.equal(classifyScore("4.9").passed, false);
+assert.equal(findMembers("").length, 3);
+assert.equal(findMembers("responsive").length, 1);
+assert.equal(findMembers("Khoa")[0].name, "Lê Văn Khoa");
+assert.equal(findMembers("zzz").length, 0);
+assert.equal(validateTask("  Ôn DOM  ").value, "Ôn DOM");
+assert.equal(validateTask("   ").ok, false);
+assert.equal(validateTask("a".repeat(101)).ok, false);
+assert.deepEqual(readTasks("{bad"), []);
+assert.deepEqual(readTasks("{}"), []);
+assert.equal(readTasks(JSON.stringify([{ id: "1", text: "ok", done: true }, { bad: true }])).length, 1);
+assert.deepEqual(taskStats([{ done: true }, { done: false }]), { all: 2, done: 1 });
+assert.equal(MEMBERS.length, 3);
+console.log("Tuần 8: 20 phép kiểm tra logic đã đạt.");

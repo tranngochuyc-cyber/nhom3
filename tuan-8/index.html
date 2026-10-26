@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d2348">
+  <meta name="description" content="Bài thực hành Tuần 8, JavaScript Fundamentals: điều kiện, mảng, DOM, sự kiện, localStorage của Nhóm 3.">
+  <title>Tuần 8 · JavaScript Fundamentals | Nhóm 3</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Bỏ qua điều hướng</a>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="../index.html" aria-label="Về trang Nhóm 3"><span class="brand-icon">03</span><span>NHÓM 3 <small>THIẾT KẾ WEB · TUẦN 8</small></span></a>
+      <nav aria-label="Điều hướng bài thực hành" class="nav">
+        <a href="#logic">Logic</a><a href="#team">Mảng & DOM</a><a href="#tasks">Sự kiện & dữ liệu</a><a href="../index.html">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content">
+    <section class="container hero">
+      <div class="hero-text">
+        <p class="eyebrow">BUỔI HỌC THỨ HAI · 26/10/2026</p>
+        <h1>JavaScript<br><span>Fundamentals.</span></h1>
+        <p class="lead">Từ tư duy logic đến tương tác thật trên website. Ba bài thực hành tách biệt, nối với nhau bằng JavaScript thuần, không cần thư viện hay máy chủ.</p>
+        <div class="hero-actions"><a class="button primary" href="#logic">Bắt đầu bài tập <span aria-hidden="true">↘</span></a><a class="button outline" href="README.md">Xem hướng dẫn</a></div>
+      </div>
+      <div class="hero-terminal" aria-label="Ví dụ cú pháp JavaScript">
+        <div class="terminal-top"><span></span><span></span><span></span><strong>week8.js</strong></div>
+        <pre><code><span class="code-purple">const</span> group = <span class="code-green">"Nhóm 3"</span>;
+<span class="code-purple">const</span> week = <span class="code-yellow">8</span>;
+
+<span class="code-purple">function</span> <span class="code-cyan">learn</span>(topic) {
+  <span class="code-purple">return</span> `${group}: ${topic}`;
+}
+
+<span class="code-gray">// Logic → DOM → Events</span>
+<span class="code-cyan">learn</span>(<span class="code-green">"JavaScript"</span>);</code></pre>
+        <div class="terminal-footer"><span class="status-dot"></span> Interactive lesson · Vanilla JS</div>
+      </div>
+    </section>
+    <section class="container owners" aria-label="Phân công thành viên">
+      <div><span class="owner-label">TRƯỞNG NHÓM</span><strong>Trần Ngọc Huy</strong><p>Biến, điều kiện, hàm và tích hợp</p></div>
+      <div><span class="owner-label">THÀNH VIÊN 1</span><strong>Lê Văn Khoa</strong><p>Mảng dữ liệu, bộ lọc và cập nhật DOM</p></div>
+      <div><span class="owner-label">THÀNH VIÊN 2</span><strong>Nguyễn Minh Nhật</strong><p>Sự kiện, danh sách công việc, lưu cục bộ</p></div>
+    </section>
+    <section id="logic" class="container lesson">
+      <div class="section-head"><div><span class="section-number">01 / HUY</span><h2>Ra quyết định bằng điều kiện</h2><p>Nhập điểm, gọi hàm xử lý và xem cách <code>if / else</code> xác định kết quả.</p></div><span class="topic-pill">let · const · function · if/else</span></div>
+      <div class="module-grid">
+        <form class="module-card" id="score-form">
+          <label for="score-input">Điểm của bài thực hành (0–10)</label>
+          <div class="input-combo"><input id="score-input" name="score" type="number" min="0" max="10" step="0.1" inputmode="decimal" placeholder="Ví dụ: 8.5" required><button class="button primary" type="submit">Phân loại điểm</button></div>
+          <p class="hint">Mốc minh họa: 8+ Giỏi, 6.5+ Khá, 5+ Đạt, dưới 5 Cần cố gắng. Đây không phải thang điểm chính thức của môn học.</p>
+        </form>
+        <div class="result-card" aria-live="polite" aria-atomic="true">
+          <small>ĐẦU RA HÀM</small>
+          <strong id="score-result">Chưa có dữ liệu</strong>
+          <p id="score-detail">Nhập số hợp lệ để chạy bài thực hành.</p>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="container lesson">
+      <div class="section-head"><div><span class="section-number">02 / KHOA</span><h2>Lọc dữ liệu và cập nhật DOM</h2><p>Một mảng đối tượng chứa ba thành viên. Tìm kiếm dùng <code>filter()</code> và hiển thị bằng <code>textContent</code>.</p></div><span class="topic-pill">array · object · filter · DOM</span></div>
+      <div class="module-card">
+        <label for="team-search">Tìm theo tên, vai trò hoặc nhiệm vụ</label>
+        <input id="team-search" type="search" placeholder="Thử nhập: responsive" autocomplete="off">
+        <p id="team-count" class="hint" aria-live="polite">3 thành viên trong nhóm</p>
+        <ul id="team-list" class="team-grid">
+          <li class="team-card"><span>LEADER</span><strong>Trần Ngọc Huy</strong><p>Logic, tích hợp website</p></li>
+          <li class="team-card"><span>MEMBER 1</span><strong>Lê Văn Khoa</strong><p>Mảng, DOM, thiết kế nội dung</p></li>
+          <li class="team-card"><span>MEMBER 2</span><strong>Nguyễn Minh Nhật</strong><p>Sự kiện, responsive, tương tác</p></li>
+        </ul>
+      </div>
+    </section>
+    <section id="tasks" class="container lesson lesson-last">
+      <div class="section-head"><div><span class="section-number">03 / NHẬT</span><h2>Quản lý việc học bằng sự kiện</h2><p>Thêm việc, đánh dấu hoàn thành hoặc xóa. Danh sách dùng <code>addEventListener</code>, mảng và <code>localStorage</code> trên thiết bị của bạn.</p></div><span class="topic-pill">event · array · localStorage</span></div>
+      <div class="module-card">
+        <form id="task-form" class="task-form"><label for="task-input">Việc cần làm</label><div class="input-combo"><input id="task-input" name="task" type="text" maxlength="100" placeholder="Ví dụ: Ôn vòng lặp for" required><button class="button primary" type="submit">Thêm việc</button></div></form>
+        <div class="task-toolbar"><strong id="task-count" aria-live="polite">0/0 hoàn thành</strong><button class="text-button" id="clear-done" type="button">Xóa việc đã xong</button></div>
+        <ul id="task-list" class="task-list"><li class="hint">Bật JavaScript để thực hành tính năng này.</li></ul>
+        <p id="task-feedback" class="hint" role="status" aria-live="polite">Dữ liệu lưu trong trình duyệt của bạn khi localStorage khả dụng.</p>
+      </div>
+    </section>
+    <section class="summary-band"><div class="container summary"><div><span class="eyebrow">TỔNG KẾT BUỔI 8</span><h2>Ba người · Ba mô-đun · Một sản phẩm</h2><p>Đây là bài thực hành theo chủ đề JavaScript Fundamentals. Các yêu cầu chi tiết trong Gamma cần được đối chiếu khi có bản xuất nội dung đầy đủ.</p></div><a class="button outline-light" href="../index.html">Về trang nhóm</a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container"><p>© 2026 Nhóm 3 · Bài tập Tuần 8 · 26/10/2026</p><p><a href="README.md">Tài liệu bài tập</a> · <a href="https://gamma.app/embed/Tuan-8-JavaScript-Fundamentals-Tu-Duy-Logic-AI-First-hlyckbo7o8y0bsp?mode=doc">Tài liệu giảng viên</a></p></div></footer>
+</body>
+</html>
