@@ -67,3 +67,11 @@ Mở `index.html` bằng trình duyệt để xem. Các liên kết dùng đư�
 Thông tin tên, mã sinh viên và vai trò dựa trên tài liệu nhóm đã có. Các thẻ “nội dung học tập” mô tả phần việc trong bài, không phải tuyên bố mức độ thành thạo. Nhóm có thể tự bổ sung thông tin cá nhân, ảnh và dự án thực tế sau khi từng thành viên xác nhận.
 
 Website không có biểu mẫu gửi thư hay dịch vụ bên ngoài. Các tệp ZIP trong repository là bản lưu cũ, không cần cho website hiện tại.
+
+## Tuần 8 — JavaScript Fundamentals (26/10/2026)
+
+- [Mở bài thực hành tương tác](tuan-8/)
+- [Hướng dẫn, kiểm thử và giới hạn đối chiếu tài liệu](tuan-8/README.md)
+- [Phân công Huy / Khoa / Nhật](phan-cong/tuan-08.md)
+- Bài Tuần 8 bổ sung tiếp theo website Tuần 6; vẫn giữ bốn trang portfolio cũ.
+- Chưa xác minh toàn văn liên kết Gamma; không khẳng định đây là đủ mọi tiêu chí của giảng viên.
