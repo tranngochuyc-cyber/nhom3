@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio cá nhân - Bài thực hành CSS Grid và Flexbox">
+    <title>Portfolio Cá Nhân | Trần Ngọc Huy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-layout">
+
+    <header class="site-header">
+        <div class="logo">
+            <h1>Trần Ngọc Huy</h1>
+            <p>MSSV: 125001758 | Software Engineering Student</p>
+        </div>
+
+        <nav aria-label="Điều hướng chính">
+            <ul class="nav-list">
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#team">Nhóm</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="sidebar" aria-label="Thông tin nhanh">
+        <div class="avatar" aria-hidden="true">H</div>
+
+        <h2>Thông tin cá nhân</h2>
+        <p><strong>Trần Ngọc Huy</strong></p>
+        <p>MSSV: 125001758</p>
+        <p>Sinh viên Công nghệ thông tin</p>
+
+        <h3>Mục tiêu</h3>
+        <p>Phát triển kỹ năng Front-end, xây dựng giao diện web rõ ràng, responsive và dễ sử dụng.</p>
+
+        <h3>Thành viên nhóm</h3>
+        <ul class="member-list">
+            <li><strong>Trần Ngọc Huy</strong><br>125001758 — Trưởng nhóm</li>
+            <li>Lê Văn Khoa<br>125001668</li>
+            <li>Nguyễn Minh Nhật<br>125001448</li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <section id="about" class="card">
+            <h2>Giới Thiệu Bản Thân</h2>
+            <p>
+                Tôi là <strong>Trần Ngọc Huy</strong>, sinh viên định hướng phát triển kỹ năng thiết kế và xây dựng giao diện web.
+                Bài thực hành này tiếp tục sử dụng cấu trúc HTML từ bài trước và bổ sung hệ thống bố cục bằng CSS Grid + Flexbox.
+            </p>
+            <p>
+                Mục tiêu của tôi là tạo giao diện có cấu trúc rõ ràng, dễ đọc, responsive và có thể mở rộng trong các bài thực hành tiếp theo.
+            </p>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>Kỹ Năng Chuyên Môn</h2>
+            <p>Danh sách kỹ năng bên dưới sử dụng <code>display: flex</code>, <code>flex-wrap: wrap</code> và <code>gap</code>.</p>
+
+            <div class="skills-list">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">CSS Grid</span>
+                <span class="skill-tag">Flexbox</span>
+                <span class="skill-tag">Responsive Design</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+            </div>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Dự Án Tiêu Biểu</h2>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Portfolio cá nhân</h3>
+                    <p>Trang giới thiệu thông tin, kỹ năng và dự án cá nhân.</p>
+                    <p><strong>Công nghệ:</strong> HTML5, CSS3, Grid, Flexbox.</p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Web học tập</h3>
+                    <p>Mẫu giao diện phục vụ việc tổ chức nội dung học tập theo từng khu vực rõ ràng.</p>
+                    <p><strong>Công nghệ:</strong> HTML5, CSS3, Responsive Design.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="team" class="card">
+            <h2>Thành Viên Nhóm & Phân Công</h2>
+
+            <div class="team-grid">
+                <article class="member-card leader">
+                    <h3>Trần Ngọc Huy</h3>
+                    <p><strong>MSSV:</strong> 125001758</p>
+                    <p><strong>Vai trò:</strong> Trưởng nhóm / phụ trách chính</p>
+                    <p>Phụ trách cấu trúc HTML, CSS Grid, Flexbox, responsive, tổng hợp và hoàn thiện bài.</p>
+                </article>
+
+                <article class="member-card">
+                    <h3>Lê Văn Khoa</h3>
+                    <p><strong>MSSV:</strong> 125001668</p>
+                    <p><strong>Vai trò:</strong> Thành viên</p>
+                    <p>Hỗ trợ kiểm tra nội dung và bố cục.</p>
+                </article>
+
+                <article class="member-card">
+                    <h3>Nguyễn Minh Nhật</h3>
+                    <p><strong>MSSV:</strong> 125001448</p>
+                    <p><strong>Vai trò:</strong> Thành viên</p>
+                    <p>Hỗ trợ kiểm tra giao diện và responsive.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Liên Hệ</h2>
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" name="name" placeholder="Nhập tên của bạn">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com">
+
+                <label for="message">Nội dung</label>
+                <textarea id="message" name="message" rows="4" placeholder="Nhập nội dung..."></textarea>
+
+                <button type="submit">Gửi tin nhắn</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Trần Ngọc Huy — MSSV 125001758.</p>
+        <p>Bài thực hành Tuần 3: CSS Layout System — CSS Grid + Flexbox.</p>
+    </footer>
+
+</body>
+</html>
