@@ -38,7 +38,9 @@ Dùng **ngày commit thực tế**, không giả mạo thời điểm làm bài.
 | 21/09 | ❌ Không thấy commit trong ngày | ❌ Không thấy commit trong ngày | ❌ Không thấy commit trong ngày |
 | 28/09 | ✅ [`de754a7`](https://github.com/tranngochuyc-cyber/nhom3/commit/de754a73a725a524755023afc7db24831bdfce4e) | ❌ Chưa có bằng chứng | ❌ Chưa có bằng chứng |
 | 05/10 | ✅ [`5c3f03c`](https://github.com/tranngochuyc-cyber/nhom3/commit/5c3f03c02f9b35d1ea94a42b22ac70c8d3430687) | ❌ Chưa có bằng chứng | ❌ Chưa có bằng chứng |
-| 12/10 | ⚠️ [Codex commit](https://github.com/tranngochuyc-cyber/nhom3/commit/8d06a608e07833e420c5979ba84caaa9af724a96) | ⚠️ [Codex commit, phần Nhật](https://github.com/tranngochuyc-cyber/nhom3/commit/ae9c7e5175eef69ed0f705dd69c693b8b2edcc28) | ⚠️ [Codex commit, phần Khoa](https://github.com/tranngochuyc-cyber/nhom3/commit/8e1cb373e8104b1eb73ef4c2a38f8aa72b6876ce) |
+| 12/10 | ⚠️ [Phần Huy do nhóm phân công; commit tự động](https://github.com/tranngochuyc-cyber/nhom3/commit/8d06a608e07833e420c5979ba84caaa9af724a96) | ⚠️ [Phần Nhật do nhóm phân công; commit tự động](https://github.com/tranngochuyc-cyber/nhom3/commit/ae9c7e5175eef69ed0f705dd69c693b8b2edcc28) | ⚠️ [Phần Khoa do nhóm phân công; commit tự động](https://github.com/tranngochuyc-cyber/nhom3/commit/8e1cb373e8104b1eb73ef4c2a38f8aa72b6876ce) |
+
+**Lưu ý phân công:** Huy phụ trách trang nhóm/`huy.html` và tích hợp; Khoa phụ trách `khoa.html` và nội dung/bố cục; Nhật phụ trách `nhat.html`, responsive và giao diện di động. Đây là **phân công trách nhiệm**, không khẳng định cả ba đã trực tiếp tạo mọi commit tự động.
 
 **Thống kê:** Có 6/18 ô gắn với commit thật của thành viên trong ngày/nhánh liên quan; 12 ô chưa đủ bằng chứng commit của chính thành viên. Đây chỉ là thống kê dấu mốc hoạt động, **không phải điểm hoặc chứng nhận hoàn thành bài**.
 
@@ -46,7 +48,7 @@ Dùng **ngày commit thực tế**, không giả mạo thời điểm làm bài.
 
 1. Mỗi người dùng tài khoản GitHub của chính mình và email đã xác minh để commit **phần việc thực sự thực hiện**. Ngày commit mới là ngày hiện tại.
 2. Khi cần ghi nhận công việc đã làm từ các tuần trước nhưng chưa đẩy lên Git, mỗi người có thể bổ sung tệp, lời giải thích, bản nháp có nguồn và chứng cứ đối chiếu, ghi chú rõ 'bổ sung hồ sơ cho Tuần X'.
-3. Tài khoản Codex chỉ được ghi là tác giả hoặc người commit khi đúng là nó tạo commit. Nếu Codex đẩy code do thành viên viết, có thể đặt Author là thành viên đó và Committer phản ánh người gửi.
+3. Nhóm chỉ có ba thành viên: Huy, Khoa và Nhật. Với commit do công cụ tạo, giữ metadata lịch sử chính xác; nếu có bằng chứng thành viên thực sự viết nội dung và công cụ chỉ gửi lên, có thể thể hiện Author theo bằng chứng và phân biệt Committer.
 4. Mọi thay đổi cần giữ website cuối tuần 6 trên `main`; nên dùng pull request để nhóm xem lại trước khi nhập thay đổi nội dung.
 5. Không tự ý sửa lịch sử có sẵn bằng `force push` hoặc gán lại email nếu không xác minh người tạo nội dung.
 

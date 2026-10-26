@@ -4,6 +4,31 @@ Website bốn trang của Nhóm 3 trong bài thực hành Thiết kế Web. Tran
 
 **Xem website:** [Portfolio Nhóm 3 trên GitHub Pages](https://tranngochuyc-cyber.github.io/nhom3/)
 
+## Thành viên chịu trách nhiệm và phân chia sản phẩm
+
+**Nhóm thực hiện bài tập gồm đúng ba thành viên sau.** Vai trò dưới đây là phần việc nhóm phân công phụ trách/kiểm tra; tên trên GitHub ở từng commit vẫn là thông tin lịch sử riêng và không được suy ra chỉ từ bảng phân công.
+
+| Thành viên | GitHub / email | Phần được phân công trong sản phẩm Tuần 6 |
+|---|---|---|
+| **Trần Ngọc Huy** — nhóm trưởng, MSSV 125001758 | [tranngochuyc-cyber](https://github.com/tranngochuyc-cyber) · `tranngochuyc@gmail.com` | Điều phối nhóm, cấu trúc và nội dung trang chính `index.html`, tích hợp HTML/CSS/JS, kiểm tra điều hướng, README và GitHub Pages; quản lý nội dung `huy.html` |
+| **Lê Văn Khoa** — thành viên, MSSV 125001668 | [KhoaLe25CT113](https://github.com/KhoaLe25CT113) · `khoa44905@gmail.com` | Nội dung và bố cục `khoa.html`, semantic sections, typography, design tokens, thành phần giao diện, review nội dung và lỗi hiển thị |
+| **Nguyễn Minh Nhật** — thành viên, MSSV 125001448 | [nhatlatao01-del](https://github.com/nhatlatao01-del) · `nhatlatao01@gmail.com` | Nội dung và giao diện `nhat.html`, responsive trên điện thoại, Flexbox/gallery, hiệu ứng/animation, kiểm tra mobile, menu và accessibility |
+
+### Công việc theo từng bài học
+
+| Bài | Huy (trưởng nhóm) | Khoa (thành viên 1) | Nhật (thành viên 2) |
+|---|---|---|---|
+| Tuần 1 — Git & AI | Khởi tạo dự án, README và quy trình nhóm | Khung HTML cơ bản | CSS cơ bản và ghi lại prompt |
+| Tuần 2 — Semantic HTML5 | Header/nav/main/footer, metadata, tích hợp vào `develop` | Section/article nội dung | Aside/figure/time, review chéo PR |
+| Tuần 3 — CSS Grid/Flexbox | Layout tổng thể với CSS Grid | Nội dung chính, thẻ và typography | Lưới Project Gallery ít nhất sáu item |
+| Tuần 4 — Design System/Responsive | Mobile-first và breakpoint 375/768/1024 | CSS variables, spacing và components | Kiểm tra điện thoại, lỗi tràn ngang, file AI prompts |
+| Tuần 5 — Animation | Menu hamburger và tích hợp hiệu ứng | Hover và card flip | Typing/skill bar và hiệu ứng chuyển động |
+| Tuần 6 — Hoàn thiện | README, W3C, điều phối showcase | Bug Hunter, sửa lỗi giao diện/nội dung | Kiểm tra đa thiết bị, performance/animation |
+
+**Bằng chứng commit trực tiếp đã có:** [Nhật — 07/09](https://github.com/tranngochuyc-cyber/nhom3/commit/70ee2d9990bfcb6d0e410f84614dbfd642aae2e0), [Khoa — 08/09](https://github.com/tranngochuyc-cyber/nhom3/commit/a8790e59effff47d84de610ce618b6ef2d0fc8fb), [Huy — 07/09](https://github.com/tranngochuyc-cyber/nhom3/commit/8b41632bc067e13a1dd757ef3b24279e07e18622). Các commit chưa mang tài khoản thành viên được giữ nguyên lịch sử; bảng này **không khẳng định** họ là người trực tiếp viết mọi dòng code được công cụ đẩy lên.
+
+**Phân công và cách bổ sung bài:** [`PHAN_CONG_6_TUAN.md`](PHAN_CONG_6_TUAN.md). Bài cũ và minh chứng được lưu trên nhánh [`ho-so-6-tuan`](https://github.com/tranngochuyc-cyber/nhom3/tree/ho-so-6-tuan); phiên bản website được giữ ở `main`.
+
 ## Các trang
 
 | Trang | Nội dung |
