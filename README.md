@@ -1,5 +1,8 @@
 # Portfolio — Tuần 6
 
+> **Hồ sơ đóng góp và bằng chứng thời gian:** [BAO_CAO_DONG_GOP.md](BAO_CAO_DONG_GOP.md) — kiểm kê commit/PR gốc theo từng ngày, phân biệt kết quả đã chứng minh và phần chưa có. [Bản lưu bài cũ](https://github.com/tranngochuyc-cyber/nhom3/tree/ho-so-6-tuan) đã sửa đúng nguồn bài CSS Grid Tuần 3.
+
+
 Website bốn trang của Nhóm 3 trong bài thực hành Thiết kế Web. Trang chủ giới thiệu nhóm; ba trang còn lại giới thiệu từng thành viên và phần việc của họ. Nội dung được đối chiếu với README và lịch sử repository trước khi viết lại, không tự thêm thành tích cá nhân.
 
 **Xem website:** [Portfolio Nhóm 3 trên GitHub Pages](https://tranngochuyc-cyber.github.io/nhom3/)
