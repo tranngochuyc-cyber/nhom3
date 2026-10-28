@@ -1,5 +1,17 @@
 # Portfolio — Tuần 6
 
+## Nhóm thực hiện — 3 sinh viên
+
+| Thành viên | Tài khoản GitHub | Email dùng để đối chiếu | Lịch sử đóng góp cá nhân |
+|---|---|---|---|
+| **Trần Ngọc Huy** — MSSV 125001758, trưởng nhóm | [`tranngochuyc-cyber`](https://github.com/tranngochuyc-cyber) | `tranngochuyc@gmail.com` | [Lịch sử commit của Huy](https://github.com/tranngochuyc-cyber/nhom3/commits/main/?author=tranngochuyc-cyber) · [PR #5](https://github.com/tranngochuyc-cyber/nhom3/pull/5) |
+| **Lê Văn Khoa** — MSSV 125001668 | [`KhoaLe25CT113`](https://github.com/KhoaLe25CT113) | `khoa44905@gmail.com` | [Lịch sử commit của Khoa](https://github.com/tranngochuyc-cyber/nhom3/commits/main/?author=KhoaLe25CT113) · [Commit ngày 07/09](https://github.com/tranngochuyc-cyber/nhom3/commit/b9fd9e859) · [PR #7](https://github.com/tranngochuyc-cyber/nhom3/pull/7) |
+| **Nguyễn Minh Nhật** — MSSV 125001448 | [`nhatlatao01-del`](https://github.com/nhatlatao01-del) | `nhatlatao01@gmail.com` | [Lịch sử commit của Nhật](https://github.com/tranngochuyc-cyber/nhom3/commits/main/?author=nhatlatao01-del) · [Commit ngày 07/09](https://github.com/tranngochuyc-cyber/nhom3/commit/70ee2d9990bfcb6d0e410f84614dbfd642aae2e0) · [PR #6](https://github.com/tranngochuyc-cyber/nhom3/pull/6) |
+
+**Để thầy cô xem ai làm gì:** mở liên kết **Lịch sử commit** của từng người, chọn một commit để xem tác giả, thời gian và tab **Files changed**. Để đối chiếu **email thực sự ghi trong commit**, mở URL của commit và thêm `.patch` ở cuối (ví dụ: [commit của Nhật dưới dạng patch](https://github.com/tranngochuyc-cyber/nhom3/commit/70ee2d9990bfcb6d0e410f84614dbfd642aae2e0.patch)); đọc trường `From:`. Email trong commit có thể là địa chỉ GitHub `noreply` nếu thành viên bật quyền riêng tư.
+
+**Phạm vi nhóm:** chỉ ba sinh viên ở bảng trên là thành viên được phân công. Mục **Contributors** ở bên phải trang GitHub là thống kê tự động từ **toàn bộ tác giả commit**, không phải danh sách thành viên chính thức. Tài khoản công cụ từng tạo commit không được tính là thành viên nhóm; lịch sử gốc vẫn được giữ để đối chiếu trung thực. [Báo cáo bằng chứng theo tuần](BAO_CAO_DONG_GOP.md) ghi rõ phần nào có commit cá nhân, phần nào chỉ là bài nhóm/công cụ.
+
 > **Hồ sơ đóng góp và bằng chứng thời gian:** [BAO_CAO_DONG_GOP.md](BAO_CAO_DONG_GOP.md) — kiểm kê commit/PR gốc theo từng ngày, phân biệt kết quả đã chứng minh và phần chưa có. [Bản lưu bài cũ](https://github.com/tranngochuyc-cyber/nhom3/tree/ho-so-6-tuan) đã sửa đúng nguồn bài CSS Grid Tuần 3.
 
 
