@@ -20,7 +20,7 @@
 - `tuan-1/GHI_CHU.md`: ghi rõ chưa xác minh được bài nộp riêng; có dẫn nguồn.
 - `tuan-2/nhat-original.html`: snapshot từ [commit Nhật, 07/09](https://github.com/tranngochuyc-cyber/nhom3/commit/70ee2d9990bfcb6d0e410f84614dbfd642aae2e0).
 - `tuan-2/khoa-original.html`: snapshot từ [nhánh Khoa_Le, 07/09](https://github.com/tranngochuyc-cyber/nhom3/tree/Khoa_Le).
-- `tuan-3/`: source HTML/CSS, README và prompt_log lấy từ [commit bài Tuần 3, 14/09](https://github.com/tranngochuyc-cyber/nhom3/commit/7a394e00f632a546170137b411a3aee92288dd51).
+- `tuan-3/`: source HTML/CSS và `prompt_log.md` khôi phục **nguyên blob gốc** từ [commit `1eaa0d9` (14/09)](https://github.com/tranngochuyc-cyber/nhom3/commit/1eaa0d9592de0fce88be07604e3c8f67b42563e6). File prompt gốc rỗng. Bản lưu trước đó đã lấy nhầm HTML/CSS/README; nay đã thay lại đúng nguồn. Xem `tuan-3/GHI_CHU_NGUON_GOC.md`.
 - `tuan-4/nhom3.zip`: blob cũ có mặt trong commit [28/09](https://github.com/tranngochuyc-cyber/nhom3/commit/de754a73a725a524755023afc7db24831bdfce4e).
 - `tuan-5/nhom3-33.zip`: blob cũ có mặt trong commit [05/10](https://github.com/tranngochuyc-cyber/nhom3/commit/5c3f03c02f9b35d1ea94a42b22ac70c8d3430687).
 - `tuan-6/XEM_MAIN.md`: đường dẫn đến sản phẩm cuối, không tạo bản trùng.
@@ -42,7 +42,7 @@ Dùng **ngày commit thực tế**, không giả mạo thời điểm làm bài.
 
 **Lưu ý phân công:** Huy phụ trách trang nhóm/`huy.html` và tích hợp; Khoa phụ trách `khoa.html` và nội dung/bố cục; Nhật phụ trách `nhat.html`, responsive và giao diện di động. Đây là **phân công trách nhiệm**, không khẳng định cả ba đã trực tiếp tạo mọi commit tự động.
 
-**Thống kê:** Có 6/18 ô gắn với commit thật của thành viên trong ngày/nhánh liên quan; 12 ô chưa đủ bằng chứng commit của chính thành viên. Đây chỉ là thống kê dấu mốc hoạt động, **không phải điểm hoặc chứng nhận hoàn thành bài**.
+**Thống kê cũ:** Có 6/18 ô gắn với dấu mốc hoạt động của người được phân công trong bảng lịch; đây chỉ là bảng kiểm kê theo **ngày học**, không chứng minh hoàn thành từng bài, và riêng commit `8b41632` của Huy có email `tranngochuyc@example.com` chưa liên kết chắc chắn với tài khoản GitHub. Bằng chứng tổng hợp mới nhất xem [`BAO_CAO_DONG_GOP.md` ở `main`](https://github.com/tranngochuyc-cyber/nhom3/blob/main/BAO_CAO_DONG_GOP.md). Đây chỉ là thống kê dấu mốc hoạt động, **không phải điểm hoặc chứng nhận hoàn thành bài**.
 
 ## 4. Làm thế nào để hoàn tất trung thực
 

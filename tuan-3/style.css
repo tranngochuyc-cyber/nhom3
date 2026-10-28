@@ -1,299 +1,192 @@
-/* =========================================================
-   BÀI THỰC HÀNH TUẦN 3 - CSS GRID + FLEXBOX
-   Nhóm:
-   - Trần Ngọc Huy - 125001758 (trưởng nhóm / phụ trách chính)
-   - Lê Văn Khoa - 125001668
-   - Nguyễn Minh Nhật - 125001448
-   ========================================================= */
-
 * {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #1f2937;
-    background: #eef3f9;
-    line-height: 1.6;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef3f8;
+  color: #1f2937;
+  line-height: 1.6;
 }
 
-/* =========================================================
-   1. CSS GRID - KHUNG TỔNG THỂ
-   Sidebar = 1fr, Main Content = 3fr
-   Header + Footer trải toàn bộ chiều rộng
-   ========================================================= */
+/* CSS GRID: khung tổng thể của trang */
 .page-layout {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: minmax(220px, 1fr) 3fr;
-    grid-template-rows: auto 1fr auto;
-    gap: 20px;
-    padding: 20px;
+  width: min(1100px, 92%);
+  margin: 32px auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
 }
 
-.site-header,
-.site-footer {
-    grid-column: 1 / -1;
+/* Header và Footer trải dài toàn bộ số cột */
+.header,
+.footer {
+  grid-column: 1 / -1;
+}
+
+.header {
+  background: #1f5aa6;
+  color: white;
+  padding: 28px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  opacity: 0.9;
+}
+
+/* FLEXBOX: menu ngang */
+.nav {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 8px;
+}
+
+.nav a:hover {
+  background: white;
+  color: #1f5aa6;
+}
+
+.sidebar,
+.main-content,
+.card {
+  min-width: 0;
 }
 
 .sidebar {
-    grid-column: 1;
-}
-
-.main-content {
-    grid-column: 2;
-}
-
-/* =========================================================
-   2. HEADER + NAVIGATION DÙNG FLEXBOX
-   ========================================================= */
-.site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
-    padding: 22px 28px;
-    background: #173f73;
-    color: #ffffff;
-    border-radius: 14px;
-}
-
-.logo h1 {
-    margin: 0;
-    font-size: clamp(1.7rem, 3vw, 2.4rem);
-}
-
-.logo p {
-    margin: 4px 0 0;
-    color: #dbeafe;
-}
-
-.nav-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.nav-list a {
-    display: block;
-    padding: 9px 12px;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-.nav-list a:hover,
-.nav-list a:focus {
-    background: #ffffff;
-    color: #173f73;
-}
-
-/* =========================================================
-   3. SIDEBAR
-   ========================================================= */
-.sidebar {
-    align-self: start;
-    padding: 24px;
-    background: #ffffff;
-    border-radius: 14px;
-    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
 }
 
 .avatar {
-    width: 110px;
-    height: 110px;
-    margin: 0 auto 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: #2563eb;
-    color: #ffffff;
-    font-size: 3rem;
-    font-weight: 700;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #1f5aa6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 18px;
 }
 
 .sidebar h2,
+.sidebar h3,
+.card h2 {
+  margin-top: 0;
+  color: #1f5aa6;
+}
+
 .sidebar h3 {
-    color: #173f73;
+  margin-top: 24px;
 }
 
-.member-list {
-    padding-left: 20px;
+/* FLEXBOX: danh sách kỹ năng tự xuống dòng */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.member-list li {
-    margin-bottom: 12px;
+.skills span {
+  background: #e6efff;
+  color: #174a8b;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 14px;
 }
 
-/* =========================================================
-   4. MAIN CONTENT
-   ========================================================= */
 .main-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    min-width: 0;
+  display: grid;
+  gap: 20px;
 }
 
 .card {
-    padding: 26px;
-    background: #ffffff;
-    border-radius: 14px;
-    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
 }
 
-.card h2 {
-    margin-top: 0;
-    color: #173f73;
-}
-
-/* =========================================================
-   5. FLEXBOX - DANH SÁCH KỸ NĂNG
-   ========================================================= */
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.skill-tag {
-    padding: 9px 14px;
-    background: #dbeafe;
-    color: #1e3a8a;
-    border: 1px solid #bfdbfe;
-    border-radius: 999px;
-    font-weight: 700;
-}
-
-/* Các khu vực con có nhiều cột */
-.project-grid,
-.team-grid {
-    display: grid;
-    gap: 16px;
-}
-
+/* Grid nhỏ cho khu vực dự án */
 .project-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
 
-.team-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+.project-item {
+  border: 1px solid #d7e0ea;
+  border-radius: 10px;
+  padding: 18px;
+  background: #f8fafc;
 }
 
-.project-card,
-.member-card {
-    padding: 18px;
-    border: 1px solid #dbe2ea;
-    border-radius: 10px;
-    background: #f8fafc;
+.project-item h3 {
+  margin-top: 0;
 }
 
-.member-card.leader {
-    border: 2px solid #2563eb;
-    background: #eff6ff;
+/* FLEXBOX: hàng thông tin liên hệ */
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
-/* =========================================================
-   6. FORM
-   ========================================================= */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.footer {
+  background: #0f2747;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  border-radius: 14px;
 }
 
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-    width: 100%;
-    font: inherit;
-    border-radius: 8px;
-}
+/* Responsive */
+@media (max-width: 800px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
 
-.contact-form input,
-.contact-form textarea {
-    padding: 11px 12px;
-    border: 1px solid #cbd5e1;
-}
+  .header,
+  .footer {
+    grid-column: 1;
+  }
 
-.contact-form button {
-    width: fit-content;
-    margin-top: 6px;
-    padding: 10px 20px;
-    border: 0;
-    background: #173f73;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-/* =========================================================
-   7. FOOTER
-   ========================================================= */
-.site-footer {
-    text-align: center;
-    padding: 18px;
-    background: #173f73;
-    color: #ffffff;
-    border-radius: 14px;
-}
-
-.site-footer p {
-    margin: 3px 0;
-}
-
-/* =========================================================
-   8. RESPONSIVE - tránh vỡ layout / overlap
-   ========================================================= */
-@media (max-width: 900px) {
-    .page-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .site-header,
-    .sidebar,
-    .main-content,
-    .site-footer {
-        grid-column: 1;
-    }
-
-    .site-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-list {
-        justify-content: flex-start;
-    }
-
-    .team-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .page-layout {
-        padding: 10px;
-        gap: 12px;
-    }
-
-    .site-header,
-    .sidebar,
-    .card,
-    .site-footer {
-        border-radius: 10px;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
